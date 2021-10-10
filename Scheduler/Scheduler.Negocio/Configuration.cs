@@ -4,6 +4,8 @@ namespace Scheduler
 {
     public class Configuration
     {
+        public Configuration()
+        { }
         public DateTime CurrentDate { get; set; }
         public DateTime? Date  { get; set; }
         public Type Type { get; set; }

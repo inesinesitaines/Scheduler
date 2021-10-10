@@ -6,20 +6,25 @@ using System.Threading.Tasks;
 
 namespace Scheduler
 {
-    public class Calculator
+    public static class Calculator
     {
-        private Configuration configuration;
-
-        private DateTime? nextDate { get; set; }
-        private DateTime? startDate { get; set; }
-        public void CalculateNextDate(Configuration configuration)
+        public static Schedule CreateSchedule(Configuration configuration)
         {
-            this.configuration = configuration;
-            this.startDate = configuration.StartDate;
-            DateTime ReferenceDate = GetReferenceDate(configuration.CurrentDate, configuration.Date);
+            Validator.ValidateStartEndDates(configuration.StartDate, configuration.EndDate);
 
-            this.ValidateDateInLimits(ReferenceDate, configuration.StartDate, configuration.EndDate);
-            this.SetNextDate(ReferenceDate);
+            Schedule schedule = new Schedule(configuration.Type, configuration.StartDate, configuration.EndDate);
+
+            DateTime referenceDate = Calculator.GetReferenceDate(configuration.CurrentDate, configuration.Date);
+            
+            DateTime? nextDate = null;
+            if (Calculator.DateInLimits(referenceDate, configuration.StartDate, configuration.EndDate))
+            {
+                nextDate = Calculator.GetNextDate(configuration.Type, referenceDate, configuration.NumberOfDays);
+            }
+            
+            schedule.NextDate = nextDate;
+
+            return schedule;
         }
 
         private static DateTime GetReferenceDate(DateTime currentDate, DateTime? date)
@@ -31,26 +36,26 @@ namespace Scheduler
             return date.Value;
         }
 
-        private void ValidateDateInLimits(DateTime referenceDate, DateTime? startDate, DateTime? endDate)
+        public static bool DateInLimits(DateTime referenceDate, DateTime? startDate, DateTime? endDate)
         {
             bool validDateStart = startDate.HasValue == false || startDate.Value <= referenceDate;
             bool validDateEnd = endDate.HasValue == false || endDate.Value >= referenceDate;
             if((validDateEnd && validDateStart) == false)
             {
-                this.nextDate = null;
-                return;
+                return false;
             }
+            return true;
         }
 
-        private void SetNextDate(DateTime referenceDate)
+        private static DateTime GetNextDate(Type type, DateTime referenceDate, int numberOfDays)
         {
-            if (configuration.Type == Type.Once)
+            if (type == Type.Once)
             {
-                this.nextDate = referenceDate;
+                return referenceDate;
             }
             else
             {
-                this.nextDate = referenceDate.AddDays(configuration.NumberOfDays);
+                return referenceDate.AddDays(numberOfDays);
             }
         }
     }
