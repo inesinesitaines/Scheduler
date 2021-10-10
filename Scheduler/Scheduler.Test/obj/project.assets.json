@@ -5974,8 +5974,8 @@
     },
     "Scheduler/1.0.0": {
       "type": "project",
-      "path": "../Scheduler.Negocio/Scheduler.csproj",
-      "msbuildProject": "../Scheduler.Negocio/Scheduler.csproj"
+      "path": "../Scheduler/Scheduler.csproj",
+      "msbuildProject": "../Scheduler/Scheduler.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6019,8 +6019,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Escritorio\\Scheduler\\Project\\Scheduler\\Scheduler.Negocio\\Scheduler.csproj": {
-              "projectPath": "D:\\Escritorio\\Scheduler\\Project\\Scheduler\\Scheduler.Negocio\\Scheduler.csproj"
+            "D:\\Escritorio\\Scheduler\\Project\\Scheduler\\Scheduler\\Scheduler.csproj": {
+              "projectPath": "D:\\Escritorio\\Scheduler\\Project\\Scheduler\\Scheduler\\Scheduler.csproj"
             }
           }
         }

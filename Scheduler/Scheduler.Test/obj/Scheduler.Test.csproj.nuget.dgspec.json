@@ -4,63 +4,6 @@
     "D:\\Escritorio\\Scheduler\\Project\\Scheduler\\Scheduler.Test\\Scheduler.Test.csproj": {}
   },
   "projects": {
-    "D:\\Escritorio\\Scheduler\\Project\\Scheduler\\Scheduler.Negocio\\Scheduler.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\Escritorio\\Scheduler\\Project\\Scheduler\\Scheduler.Negocio\\Scheduler.csproj",
-        "projectName": "Scheduler",
-        "projectPath": "D:\\Escritorio\\Scheduler\\Project\\Scheduler\\Scheduler.Negocio\\Scheduler.csproj",
-        "packagesPath": "C:\\Users\\inesd\\.nuget\\packages\\",
-        "outputPath": "D:\\Escritorio\\Scheduler\\Project\\Scheduler\\Scheduler.Negocio\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\inesd\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net5.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://www.nuget.org/api/v2": {}
-        },
-        "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
     "D:\\Escritorio\\Scheduler\\Project\\Scheduler\\Scheduler.Test\\Scheduler.Test.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -88,8 +31,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Escritorio\\Scheduler\\Project\\Scheduler\\Scheduler.Negocio\\Scheduler.csproj": {
-                "projectPath": "D:\\Escritorio\\Scheduler\\Project\\Scheduler\\Scheduler.Negocio\\Scheduler.csproj"
+              "D:\\Escritorio\\Scheduler\\Project\\Scheduler\\Scheduler\\Scheduler.csproj": {
+                "projectPath": "D:\\Escritorio\\Scheduler\\Project\\Scheduler\\Scheduler\\Scheduler.csproj"
               }
             }
           }
@@ -129,6 +72,63 @@
               "version": "[2.4.3, )"
             }
           },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Escritorio\\Scheduler\\Project\\Scheduler\\Scheduler\\Scheduler.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Escritorio\\Scheduler\\Project\\Scheduler\\Scheduler\\Scheduler.csproj",
+        "projectName": "Scheduler",
+        "projectPath": "D:\\Escritorio\\Scheduler\\Project\\Scheduler\\Scheduler\\Scheduler.csproj",
+        "packagesPath": "C:\\Users\\inesd\\.nuget\\packages\\",
+        "outputPath": "D:\\Escritorio\\Scheduler\\Project\\Scheduler\\Scheduler\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\inesd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://www.nuget.org/api/v2": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
           "imports": [
             "net461",
             "net462",

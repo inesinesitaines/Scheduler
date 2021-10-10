@@ -2,6 +2,7 @@ D:\Escritorio\Scheduler\Project\Scheduler\Scheduler.Negocio\bin\Debug\net5.0\Sch
 D:\Escritorio\Scheduler\Project\Scheduler\Scheduler.Negocio\bin\Debug\net5.0\Scheduler.dll
 D:\Escritorio\Scheduler\Project\Scheduler\Scheduler.Negocio\bin\Debug\net5.0\ref\Scheduler.dll
 D:\Escritorio\Scheduler\Project\Scheduler\Scheduler.Negocio\bin\Debug\net5.0\Scheduler.pdb
+D:\Escritorio\Scheduler\Project\Scheduler\Scheduler.Negocio\obj\Debug\net5.0\Scheduler.csproj.AssemblyReference.cache
 D:\Escritorio\Scheduler\Project\Scheduler\Scheduler.Negocio\obj\Debug\net5.0\Scheduler.GeneratedMSBuildEditorConfig.editorconfig
 D:\Escritorio\Scheduler\Project\Scheduler\Scheduler.Negocio\obj\Debug\net5.0\Scheduler.AssemblyInfoInputs.cache
 D:\Escritorio\Scheduler\Project\Scheduler\Scheduler.Negocio\obj\Debug\net5.0\Scheduler.AssemblyInfo.cs
