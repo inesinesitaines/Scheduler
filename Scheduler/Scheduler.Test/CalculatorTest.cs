@@ -25,5 +25,17 @@ namespace Scheduler.Test
 
             Assert.Equal(Calculator.DateInLimits(ReferenceDate, StartDate, EndDate), result);
         }
+
+        [Theory]
+        [InlineData(Type.Once, "2021-1-1", 1, "2021-1-1")]
+        [InlineData(Type.Once, "2021-1-1", 2, "2021-1-1")]
+        [InlineData(Type.Recurring, "2021-1-4", 1, "2021-1-5")]
+        public void Input_Values_Return_Next_Date(Type type, string referenceDate, int numberOfDays, string nextDate)
+        {
+            DateTime ReferenceDate = DateTime.Parse(referenceDate);
+            DateTime NextDate = DateTime.Parse(nextDate);
+
+            Calculator.GetNextDate(type, ReferenceDate, numberOfDays).Should().Be(NextDate);
+        }
     }
 }

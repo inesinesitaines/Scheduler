@@ -47,7 +47,7 @@ namespace Scheduler
             return true;
         }
 
-        private static DateTime GetNextDate(Type type, DateTime referenceDate, int numberOfDays)
+        public static DateTime GetNextDate(Type type, DateTime referenceDate, int numberOfDays)
         {
             if (type == Type.Once)
             {
