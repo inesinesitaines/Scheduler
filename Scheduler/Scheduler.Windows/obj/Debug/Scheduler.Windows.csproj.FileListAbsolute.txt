@@ -1,9 +1,0 @@
-D:\Escritorio\Scheduler\Project\Scheduler\Scheduler\bin\Debug\Scheduler.exe.config
-D:\Escritorio\Scheduler\Project\Scheduler\Scheduler\bin\Debug\Scheduler.exe
-D:\Escritorio\Scheduler\Project\Scheduler\Scheduler\bin\Debug\Scheduler.pdb
-D:\Escritorio\Scheduler\Project\Scheduler\Scheduler\obj\Debug\Scheduler.Windows.csproj.AssemblyReference.cache
-D:\Escritorio\Scheduler\Project\Scheduler\Scheduler\obj\Debug\Scheduler.Properties.Resources.resources
-D:\Escritorio\Scheduler\Project\Scheduler\Scheduler\obj\Debug\Scheduler.Windows.csproj.GenerateResource.cache
-D:\Escritorio\Scheduler\Project\Scheduler\Scheduler\obj\Debug\Scheduler.Windows.csproj.CoreCompileInputs.cache
-D:\Escritorio\Scheduler\Project\Scheduler\Scheduler\obj\Debug\Scheduler.exe
-D:\Escritorio\Scheduler\Project\Scheduler\Scheduler\obj\Debug\Scheduler.pdb

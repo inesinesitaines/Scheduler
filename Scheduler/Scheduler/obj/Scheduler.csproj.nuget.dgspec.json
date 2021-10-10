@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Escritorio\\Scheduler\\Project\\Scheduler\\Scheduler.Negocio\\Scheduler.csproj": {}
+    "D:\\Escritorio\\Scheduler\\Project\\Scheduler\\Scheduler\\Scheduler.csproj": {}
   },
   "projects": {
-    "D:\\Escritorio\\Scheduler\\Project\\Scheduler\\Scheduler.Negocio\\Scheduler.csproj": {
+    "D:\\Escritorio\\Scheduler\\Project\\Scheduler\\Scheduler\\Scheduler.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Escritorio\\Scheduler\\Project\\Scheduler\\Scheduler.Negocio\\Scheduler.csproj",
+        "projectUniqueName": "D:\\Escritorio\\Scheduler\\Project\\Scheduler\\Scheduler\\Scheduler.csproj",
         "projectName": "Scheduler",
-        "projectPath": "D:\\Escritorio\\Scheduler\\Project\\Scheduler\\Scheduler.Negocio\\Scheduler.csproj",
+        "projectPath": "D:\\Escritorio\\Scheduler\\Project\\Scheduler\\Scheduler\\Scheduler.csproj",
         "packagesPath": "C:\\Users\\inesd\\.nuget\\packages\\",
-        "outputPath": "D:\\Escritorio\\Scheduler\\Project\\Scheduler\\Scheduler.Negocio\\obj\\",
+        "outputPath": "D:\\Escritorio\\Scheduler\\Project\\Scheduler\\Scheduler\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
