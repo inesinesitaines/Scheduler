@@ -8,12 +8,13 @@ namespace Scheduler
 {
     public enum Frecuency
     {
-        Daily = 1
+        Daily
     }
 
+    [Flags]
     public enum Type
     {
-        Once = 1,
-        Recurring = 2
+        Once,
+        Recurring
     }
 }

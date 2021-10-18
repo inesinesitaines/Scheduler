@@ -16,7 +16,7 @@ namespace Scheduler
         }
         public DateTime? StartDate { get; set; }
         public DateTime? EndDate { get; set; }
-        public DateTime? NextDate { get; set; }
+        public DateTime[] NextDates { get; set; }
         public Type TypeOfSchedule { get; set; }
     }
 }
