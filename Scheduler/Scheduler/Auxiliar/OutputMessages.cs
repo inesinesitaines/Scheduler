@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Scheduler
+namespace Scheduler.Auxiliar
 {
-    public class Messages
+    public class OutputMessages
     {
         public string OutputMessage(string frecuency, DateTime nextDate, DateTime? startDate, DateTime? endDate)
         {

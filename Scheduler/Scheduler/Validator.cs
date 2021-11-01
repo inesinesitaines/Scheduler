@@ -3,16 +3,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Scheduler.Auxiliar;
 
 namespace Scheduler
 {
     public static class Validator
     {
-        public static void ValidateStartEndDates(DateTime? startDate, DateTime? endDate)
+        public static void ValidateLimitDates(DateTime? startDate, DateTime? endDate)
         {
             if(startDate.HasValue && endDate.HasValue && startDate > endDate)
             {
-                throw new Exception("Start date should be smaller than the end date.");
+                throw new Exception("Start date should be smaller than end date.");
+            }
+        }
+
+        public static void ValidateLimitHours(TimeSpan? startHour, TimeSpan? endHour)
+        {
+            if(startHour.HasValue && endHour.HasValue && startHour > endHour)
+            {
+                throw new Exception("Start hour should be smaller than end hour.");
             }
         }
 
@@ -26,10 +35,19 @@ namespace Scheduler
             return DateTime;
         }
 
+        public static DateTime? ValidateDateTimeNullable(string dateTime)
+        {
+            if(string.IsNullOrEmpty(dateTime))
+            {
+                return null;
+            }
+            return ValidateDateTime(dateTime);
+        }
+
         public static int ValidateIntNumber(string number)
         {
             int Number;
-            if(Int32.TryParse(number, out Number) == false)
+            if(int.TryParse(number, out Number) == false)
             {
                 throw new Exception("This is not an integer number.");
             }
@@ -38,15 +56,15 @@ namespace Scheduler
 
         public static void ValidatePositiveNumber(int number)
         {
-            if(number < 0)
+            if(number <= 0)
             {
                 throw new Exception("This number must be positive.");
             }
         }
 
-        public static Type ValidateType(string type)
+        public static Mode ValidateType(string type)
         {
-            Type Type;
+            Mode Type;
             if(Enum.TryParse(type, out Type) == false)
             {
                 throw new Exception("Type must be 'Once' or 'Recurring'.");
@@ -59,7 +77,7 @@ namespace Scheduler
             Frecuency Frecuency;
             if(Enum.TryParse(frecuency, out Frecuency) == false)
             {
-                throw new Exception("Frecuency must be 'Daily'.");
+                throw new Exception("Frecuency must be 'Daily' or 'Weekly'.");
             }
             return Frecuency;
         }

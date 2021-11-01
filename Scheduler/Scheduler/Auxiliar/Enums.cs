@@ -4,17 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Scheduler
+namespace Scheduler.Auxiliar
 {
     public enum Frecuency
     {
-        Daily
+        Daily = 0,
+        Weekly = 1
     }
 
-    [Flags]
-    public enum Type
+    public enum Mode
     {
-        Once,
-        Recurring
+        Once = 0,
+        Recurring = 1
     }
 }
