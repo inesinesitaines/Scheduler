@@ -25,12 +25,15 @@ namespace Scheduler
 
         private void SetDays(DateTime date)
         {
-            DateTime[] Dates = new DateTime[] { this.Sunday, this.Monday, this.Tuesday, this.Wednesday, this.Thursday, this.Friday, this.Saturday };
-            for (int i = 0; i < Dates.Length; i++)
-            {
-                Dates[i] = date.AddDays(-(int)date.DayOfWeek + i);
-            }
-            this.Days = Dates;
+            this.Sunday = date.AddDays(-(int)date.DayOfWeek);
+            this.Monday = date.AddDays(-(int)date.DayOfWeek + 1);
+            this.Tuesday = date.AddDays(-(int)date.DayOfWeek + 2);
+            this.Wednesday = date.AddDays(-(int)date.DayOfWeek + 3);
+            this.Thursday = date.AddDays(-(int)date.DayOfWeek + 4);
+            this.Friday = date.AddDays(-(int)date.DayOfWeek + 5);
+            this.Saturday = date.AddDays(-(int)date.DayOfWeek + 6);
+
+            this.Days = new DateTime[] { this.Sunday, this.Monday, this.Tuesday, this.Wednesday, this.Thursday, this.Friday, this.Saturday };
         }
 
         public DateTime GetDay(DayOfWeek dayOfWeek)

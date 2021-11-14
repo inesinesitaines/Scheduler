@@ -1,0 +1,1890 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+<coverage line-rate="0.8695014662756598" branch-rate="0.6296296296296297" lines-covered="593" lines-valid="682" branches-covered="102" branches-valid="162" complexity="246" version="0" timestamp="1636935523">
+  <sources>
+    <source>D:\Escritorio\Scheduler\Project\Scheduler\</source>
+    <source>C:\</source>
+  </sources>
+  <packages>
+    <package name="Scheduler" line-rate="0.7654986522911051" branch-rate="0.625" complexity="215">
+      <classes>
+        <class name="Scheduler.Auxiliar.ExceptionMessages" filename="D:\Escritorio\Scheduler\Project\Scheduler\Scheduler\Auxiliar\ExceptionMessages.cs" line-rate="0.42857142857142855" branch-rate="1" complexity="14">
+          <methods>
+            <method name="get_InvalidHourInterval" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_FrecuencyEmpty" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_DaysIntervalEmpty" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="18" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_WeekIntervalEmpty" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="21" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_TypeOfScheduleEmpty" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="24" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="get_CurrentDateEmpty" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="27" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_StartDateBiggerThanEndDate" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="30" hits="4" branch="false" />
+              </lines>
+            </method>
+            <method name="get_StartHourBiggerThanEndHour" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="33" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="get_ConfigurationDateTimeNull" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="36" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="get_TimeIntervalNull" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="39" hits="6" branch="false" />
+              </lines>
+            </method>
+            <method name="get_HourIntervalOutOfRange" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="42" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_MinuteIntervalOutOfRange" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="45" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_SecondIntervalOutOfRange" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="48" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_WeeklyIntervalNull" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="51" hits="2" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="12" hits="0" branch="false" />
+            <line number="15" hits="0" branch="false" />
+            <line number="18" hits="0" branch="false" />
+            <line number="21" hits="0" branch="false" />
+            <line number="24" hits="2" branch="false" />
+            <line number="27" hits="0" branch="false" />
+            <line number="30" hits="4" branch="false" />
+            <line number="33" hits="2" branch="false" />
+            <line number="36" hits="2" branch="false" />
+            <line number="39" hits="6" branch="false" />
+            <line number="42" hits="0" branch="false" />
+            <line number="45" hits="0" branch="false" />
+            <line number="48" hits="0" branch="false" />
+            <line number="51" hits="2" branch="false" />
+          </lines>
+        </class>
+        <class name="Scheduler.Auxiliar.OutputMessages" filename="D:\Escritorio\Scheduler\Project\Scheduler\Scheduler\Auxiliar\OutputMessages.cs" line-rate="0.9833333333333333" branch-rate="0.9166666666666666" complexity="16">
+          <methods>
+            <method name="GetOutputMessage" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="21" hits="9" branch="false" />
+                <line number="22" hits="9" branch="false" />
+                <line number="24" hits="9" branch="false" />
+                <line number="25" hits="9" branch="false" />
+                <line number="26" hits="9" branch="false" />
+                <line number="27" hits="9" branch="false" />
+              </lines>
+            </method>
+            <method name="GetOutputMessageEveryXDays" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="30" hits="4" branch="false" />
+                <line number="31" hits="4" branch="false" />
+                <line number="32" hits="4" branch="false" />
+                <line number="33" hits="4" branch="false" />
+                <line number="34" hits="4" branch="false" />
+                <line number="35" hits="4" branch="false" />
+                <line number="36" hits="4" branch="false" />
+              </lines>
+            </method>
+            <method name="GetOutPutMessageWeeklyFrecuencyOnceADay" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="39" hits="1" branch="false" />
+                <line number="40" hits="1" branch="false" />
+                <line number="41" hits="1" branch="false" />
+                <line number="42" hits="1" branch="false" />
+                <line number="43" hits="1" branch="false" />
+                <line number="44" hits="1" branch="false" />
+                <line number="45" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="GetOutPutMessageWeeklyFrecuencyDailyRecurring" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="48" hits="3" branch="false" />
+                <line number="49" hits="3" branch="false" />
+                <line number="50" hits="3" branch="false" />
+                <line number="51" hits="3" branch="false" />
+                <line number="52" hits="3" branch="false" />
+                <line number="53" hits="3" branch="false" />
+                <line number="54" hits="3" branch="false" />
+                <line number="55" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="AppendLimitDates" signature="(...)" line-rate="1" branch-rate="1" complexity="4">
+              <lines>
+                <line number="58" hits="17" branch="false" />
+                <line number="59" hits="17" branch="true" condition-coverage="100% (2/2)" />
+                <line number="60" hits="4" branch="false" />
+                <line number="61" hits="4" branch="false" />
+                <line number="62" hits="4" branch="false" />
+                <line number="63" hits="17" branch="true" condition-coverage="100% (2/2)" />
+                <line number="64" hits="3" branch="false" />
+                <line number="65" hits="3" branch="false" />
+                <line number="66" hits="3" branch="false" />
+                <line number="67" hits="17" branch="false" />
+                <line number="68" hits="17" branch="false" />
+              </lines>
+            </method>
+            <method name="AppendLimitHours" signature="(...)" line-rate="1" branch-rate="1" complexity="4">
+              <lines>
+                <line number="71" hits="3" branch="false" />
+                <line number="72" hits="3" branch="true" condition-coverage="100% (2/2)" />
+                <line number="73" hits="3" branch="false" />
+                <line number="74" hits="3" branch="false" />
+                <line number="75" hits="3" branch="false" />
+                <line number="76" hits="3" branch="true" condition-coverage="100% (2/2)" />
+                <line number="77" hits="3" branch="false" />
+                <line number="78" hits="3" branch="false" />
+                <line number="79" hits="3" branch="false" />
+                <line number="80" hits="3" branch="false" />
+                <line number="81" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="GetExpressionFromEveryXDays" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="84" hits="4" branch="false" />
+                <line number="85" hits="4" branch="true" condition-coverage="100% (2/2)" />
+                <line number="88" hits="1" branch="false" />
+                <line number="90" hits="3" branch="false" />
+                <line number="92" hits="4" branch="false" />
+              </lines>
+            </method>
+            <method name="GetExpressionFromEveryXWeeks" signature="(...)" line-rate="0.8" branch-rate="0.5" complexity="2">
+              <lines>
+                <line number="95" hits="4" branch="false" />
+                <line number="96" hits="4" branch="true" condition-coverage="50% (1/2)" />
+                <line number="99" hits="0" branch="false" />
+                <line number="101" hits="4" branch="false" />
+                <line number="103" hits="4" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="21" hits="9" branch="false" />
+            <line number="22" hits="9" branch="false" />
+            <line number="24" hits="9" branch="false" />
+            <line number="25" hits="9" branch="false" />
+            <line number="26" hits="9" branch="false" />
+            <line number="27" hits="9" branch="false" />
+            <line number="30" hits="4" branch="false" />
+            <line number="31" hits="4" branch="false" />
+            <line number="32" hits="4" branch="false" />
+            <line number="33" hits="4" branch="false" />
+            <line number="34" hits="4" branch="false" />
+            <line number="35" hits="4" branch="false" />
+            <line number="36" hits="4" branch="false" />
+            <line number="39" hits="1" branch="false" />
+            <line number="40" hits="1" branch="false" />
+            <line number="41" hits="1" branch="false" />
+            <line number="42" hits="1" branch="false" />
+            <line number="43" hits="1" branch="false" />
+            <line number="44" hits="1" branch="false" />
+            <line number="45" hits="1" branch="false" />
+            <line number="48" hits="3" branch="false" />
+            <line number="49" hits="3" branch="false" />
+            <line number="50" hits="3" branch="false" />
+            <line number="51" hits="3" branch="false" />
+            <line number="52" hits="3" branch="false" />
+            <line number="53" hits="3" branch="false" />
+            <line number="54" hits="3" branch="false" />
+            <line number="55" hits="3" branch="false" />
+            <line number="58" hits="17" branch="false" />
+            <line number="59" hits="17" branch="true" condition-coverage="100% (2/2)" />
+            <line number="60" hits="4" branch="false" />
+            <line number="61" hits="4" branch="false" />
+            <line number="62" hits="4" branch="false" />
+            <line number="63" hits="17" branch="true" condition-coverage="100% (2/2)" />
+            <line number="64" hits="3" branch="false" />
+            <line number="65" hits="3" branch="false" />
+            <line number="66" hits="3" branch="false" />
+            <line number="67" hits="17" branch="false" />
+            <line number="68" hits="17" branch="false" />
+            <line number="71" hits="3" branch="false" />
+            <line number="72" hits="3" branch="true" condition-coverage="100% (2/2)" />
+            <line number="73" hits="3" branch="false" />
+            <line number="74" hits="3" branch="false" />
+            <line number="75" hits="3" branch="false" />
+            <line number="76" hits="3" branch="true" condition-coverage="100% (2/2)" />
+            <line number="77" hits="3" branch="false" />
+            <line number="78" hits="3" branch="false" />
+            <line number="79" hits="3" branch="false" />
+            <line number="80" hits="3" branch="false" />
+            <line number="81" hits="3" branch="false" />
+            <line number="84" hits="4" branch="false" />
+            <line number="85" hits="4" branch="true" condition-coverage="100% (2/2)" />
+            <line number="88" hits="1" branch="false" />
+            <line number="90" hits="3" branch="false" />
+            <line number="92" hits="4" branch="false" />
+            <line number="95" hits="4" branch="false" />
+            <line number="96" hits="4" branch="true" condition-coverage="50% (1/2)" />
+            <line number="99" hits="0" branch="false" />
+            <line number="101" hits="4" branch="false" />
+            <line number="103" hits="4" branch="false" />
+          </lines>
+        </class>
+        <class name="Scheduler.Configuration" filename="D:\Escritorio\Scheduler\Project\Scheduler\Scheduler\Configuration.cs" line-rate="1" branch-rate="1" complexity="18">
+          <methods>
+            <method name="get_CurrentDate" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="64" branch="false" />
+              </lines>
+            </method>
+            <method name="get_DateOnce" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="38" branch="false" />
+              </lines>
+            </method>
+            <method name="get_TypeOfSchedule" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="78" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Frecuency" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="24" branch="false" />
+              </lines>
+            </method>
+            <method name="get_NumberOfDays" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="20" branch="false" />
+              </lines>
+            </method>
+            <method name="get_StartDate" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="76" branch="false" />
+              </lines>
+            </method>
+            <method name="get_EndDate" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="57" branch="false" />
+              </lines>
+            </method>
+            <method name="get_DailyMode" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="17" hits="31" branch="false" />
+              </lines>
+            </method>
+            <method name="get_DailyFrecuency" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="18" hits="9" branch="false" />
+              </lines>
+            </method>
+            <method name="get_HourOnce" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="19" hits="15" branch="false" />
+              </lines>
+            </method>
+            <method name="get_StartHour" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="34" branch="false" />
+              </lines>
+            </method>
+            <method name="get_EndHour" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="21" hits="35" branch="false" />
+              </lines>
+            </method>
+            <method name="get_SecondInterval" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="22" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="get_MinuteInterval" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="23" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="get_HourInterval" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="24" hits="17" branch="false" />
+              </lines>
+            </method>
+            <method name="get_WeekInterval" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="25" hits="14" branch="false" />
+              </lines>
+            </method>
+            <method name="get_DaysOfWeek" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="26" hits="12" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="24" branch="false" />
+                <line number="9" hits="48" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="24" branch="false" />
+            <line number="9" hits="48" branch="false" />
+            <line number="10" hits="64" branch="false" />
+            <line number="11" hits="38" branch="false" />
+            <line number="12" hits="78" branch="false" />
+            <line number="13" hits="24" branch="false" />
+            <line number="14" hits="20" branch="false" />
+            <line number="15" hits="76" branch="false" />
+            <line number="16" hits="57" branch="false" />
+            <line number="17" hits="31" branch="false" />
+            <line number="18" hits="9" branch="false" />
+            <line number="19" hits="15" branch="false" />
+            <line number="20" hits="34" branch="false" />
+            <line number="21" hits="35" branch="false" />
+            <line number="22" hits="1" branch="false" />
+            <line number="23" hits="1" branch="false" />
+            <line number="24" hits="17" branch="false" />
+            <line number="25" hits="14" branch="false" />
+            <line number="26" hits="12" branch="false" />
+          </lines>
+        </class>
+        <class name="Scheduler.Date" filename="D:\Escritorio\Scheduler\Project\Scheduler\Scheduler\Date.cs" line-rate="0.7272727272727273" branch-rate="0.375" complexity="12">
+          <methods>
+            <method name="get_Day" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="21" hits="150" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Hour" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="22" hits="70" branch="false" />
+              </lines>
+            </method>
+            <method name="op_GreaterThan" signature="(...)" line-rate="0" branch-rate="0" complexity="4">
+              <lines>
+                <line number="25" hits="0" branch="false" />
+                <line number="26" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="27" hits="0" branch="false" />
+                <line number="28" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="30" hits="0" branch="false" />
+                <line number="32" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="op_LessThan" signature="(...)" line-rate="1" branch-rate="0.75" complexity="4">
+              <lines>
+                <line number="35" hits="13" branch="false" />
+                <line number="36" hits="13" branch="true" condition-coverage="100% (2/2)" />
+                <line number="37" hits="3" branch="false" />
+                <line number="38" hits="3" branch="true" condition-coverage="50% (1/2)" />
+                <line number="40" hits="10" branch="false" />
+                <line number="41" hits="13" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="42" branch="false" />
+                <line number="12" hits="42" branch="false" />
+                <line number="13" hits="42" branch="false" />
+                <line number="14" hits="42" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="42" branch="false" />
+                <line number="17" hits="42" branch="false" />
+                <line number="18" hits="42" branch="false" />
+                <line number="19" hits="42" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="42" branch="false" />
+            <line number="12" hits="42" branch="false" />
+            <line number="13" hits="42" branch="false" />
+            <line number="14" hits="42" branch="false" />
+            <line number="16" hits="42" branch="false" />
+            <line number="17" hits="42" branch="false" />
+            <line number="18" hits="42" branch="false" />
+            <line number="19" hits="42" branch="false" />
+            <line number="21" hits="150" branch="false" />
+            <line number="22" hits="70" branch="false" />
+            <line number="25" hits="0" branch="false" />
+            <line number="26" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="27" hits="0" branch="false" />
+            <line number="28" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="30" hits="0" branch="false" />
+            <line number="32" hits="0" branch="false" />
+            <line number="35" hits="13" branch="false" />
+            <line number="36" hits="13" branch="true" condition-coverage="100% (2/2)" />
+            <line number="37" hits="3" branch="false" />
+            <line number="38" hits="3" branch="true" condition-coverage="50% (1/2)" />
+            <line number="40" hits="10" branch="false" />
+            <line number="41" hits="13" branch="false" />
+          </lines>
+        </class>
+        <class name="Scheduler.DateTimeExtension" filename="D:\Escritorio\Scheduler\Project\Scheduler\Scheduler\DateTimeExtension.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="GetWeek" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="3" branch="false" />
+                <line number="13" hits="3" branch="false" />
+                <line number="14" hits="3" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="12" hits="3" branch="false" />
+            <line number="13" hits="3" branch="false" />
+            <line number="14" hits="3" branch="false" />
+          </lines>
+        </class>
+        <class name="Scheduler.Scheduler" filename="D:\Escritorio\Scheduler\Project\Scheduler\Scheduler\Scheduler.cs" line-rate="0.6619047619047619" branch-rate="0.5819672131147541" complexity="124">
+          <methods>
+            <method name="GetNextDateOutput" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="12" hits="24" branch="false" />
+                <line number="13" hits="24" branch="false" />
+                <line number="15" hits="22" branch="true" condition-coverage="100% (2/2)" />
+                <line number="16" hits="10" branch="false" />
+                <line number="17" hits="10" branch="false" />
+                <line number="19" hits="12" branch="false" />
+                <line number="20" hits="17" branch="false" />
+              </lines>
+            </method>
+            <method name="GetNextDateRecurring" signature="(...)" line-rate="1" branch-rate="1" complexity="6">
+              <lines>
+                <line number="23" hits="12" branch="false" />
+                <line number="24" hits="12" branch="true" condition-coverage="100% (4/4)" />
+                <line number="25" hits="12" branch="false" />
+                <line number="26" hits="12" branch="false" />
+                <line number="28" hits="12" branch="true" condition-coverage="100% (2/2)" />
+                <line number="29" hits="7" branch="false" />
+                <line number="30" hits="7" branch="false" />
+                <line number="32" hits="5" branch="false" />
+                <line number="33" hits="8" branch="false" />
+              </lines>
+            </method>
+            <method name="GetNextDateDaily" signature="(...)" line-rate="0.7777777777777778" branch-rate="0.75" complexity="4">
+              <lines>
+                <line number="36" hits="7" branch="false" />
+                <line number="37" hits="7" branch="true" condition-coverage="50% (1/2)" />
+                <line number="38" hits="0" branch="false" />
+                <line number="39" hits="0" branch="false" />
+                <line number="41" hits="7" branch="true" condition-coverage="100% (2/2)" />
+                <line number="42" hits="4" branch="false" />
+                <line number="43" hits="4" branch="false" />
+                <line number="45" hits="3" branch="false" />
+                <line number="46" hits="4" branch="false" />
+              </lines>
+            </method>
+            <method name="GetNextDateDailyOnceMessage" signature="(...)" line-rate="1" branch-rate="0.8" complexity="10">
+              <lines>
+                <line number="49" hits="4" branch="false" />
+                <line number="52" hits="4" branch="true" condition-coverage="80% (8/10)" />
+                <line number="53" hits="4" branch="false" />
+                <line number="54" hits="2" branch="false" />
+                <line number="55" hits="2" branch="false" />
+                <line number="56" hits="2" branch="false" />
+                <line number="58" hits="2" branch="false" />
+                <line number="59" hits="2" branch="false" />
+                <line number="60" hits="2" branch="false" />
+                <line number="61" hits="4" branch="false" />
+                <line number="62" hits="4" branch="false" />
+                <line number="63" hits="4" branch="false" />
+              </lines>
+            </method>
+            <method name="GetNextDateDailyWithDailyFrecuencyMessage" signature="(...)" line-rate="0.23529411764705882" branch-rate="0.25" complexity="8">
+              <lines>
+                <line number="66" hits="3" branch="false" />
+                <line number="67" hits="3" branch="true" condition-coverage="50% (1/2)" />
+                <line number="68" hits="3" branch="true" condition-coverage="50% (1/2)" />
+                <line number="70" hits="3" branch="false" />
+                <line number="72" hits="0" branch="false" />
+                <line number="74" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="75" hits="0" branch="false" />
+                <line number="76" hits="0" branch="false" />
+                <line number="77" hits="0" branch="false" />
+                <line number="78" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="79" hits="0" branch="false" />
+                <line number="80" hits="0" branch="false" />
+                <line number="81" hits="0" branch="false" />
+                <line number="82" hits="0" branch="false" />
+                <line number="84" hits="0" branch="false" />
+                <line number="85" hits="0" branch="false" />
+                <line number="86" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="GetNextDateCurrentDay" signature="(...)" line-rate="0" branch-rate="0" complexity="10">
+              <lines>
+                <line number="89" hits="0" branch="false" />
+                <line number="90" hits="0" branch="true" condition-coverage="0% (0/8)" />
+                <line number="91" hits="0" branch="false" />
+                <line number="92" hits="0" branch="false" />
+                <line number="93" hits="0" branch="false" />
+                <line number="94" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="95" hits="0" branch="false" />
+                <line number="96" hits="0" branch="false" />
+                <line number="98" hits="0" branch="false" />
+                <line number="99" hits="0" branch="false" />
+                <line number="100" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="GetNextHourInCurrentDay" signature="(...)" line-rate="0" branch-rate="0" complexity="6">
+              <lines>
+                <line number="103" hits="0" branch="false" />
+                <line number="104" hits="0" branch="false" />
+                <line number="105" hits="0" branch="false" />
+                <line number="106" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="107" hits="0" branch="false" />
+                <line number="108" hits="0" branch="true" condition-coverage="0% (0/4)" />
+                <line number="109" hits="0" branch="false" />
+                <line number="110" hits="0" branch="false" />
+                <line number="111" hits="0" branch="false" />
+                <line number="113" hits="0" branch="false" />
+                <line number="114" hits="0" branch="false" />
+                <line number="115" hits="0" branch="false" />
+                <line number="116" hits="0" branch="false" />
+                <line number="117" hits="0" branch="false" />
+                <line number="118" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="ValidateDailyFrecuency" signature="(...)" line-rate="0.5862068965517241" branch-rate="0.45454545454545453" complexity="22">
+              <lines>
+                <line number="121" hits="6" branch="false" />
+                <line number="122" hits="6" branch="false" />
+                <line number="124" hits="6" branch="true" condition-coverage="100% (4/4)" />
+                <line number="127" hits="4" branch="true" condition-coverage="100% (2/2)" />
+                <line number="128" hits="1" branch="false" />
+                <line number="129" hits="1" branch="false" />
+                <line number="131" hits="3" branch="true" condition-coverage="50% (2/4)" />
+                <line number="132" hits="0" branch="false" />
+                <line number="133" hits="0" branch="false" />
+                <line number="135" hits="3" branch="false" />
+                <line number="136" hits="3" branch="false" />
+                <line number="138" hits="1" branch="true" condition-coverage="50% (1/2)" />
+                <line number="139" hits="1" branch="false" />
+                <line number="140" hits="1" branch="false" />
+                <line number="142" hits="0" branch="true" condition-coverage="0% (0/4)" />
+                <line number="143" hits="0" branch="false" />
+                <line number="144" hits="0" branch="false" />
+                <line number="146" hits="0" branch="false" />
+                <line number="147" hits="0" branch="false" />
+                <line number="149" hits="1" branch="true" condition-coverage="50% (1/2)" />
+                <line number="150" hits="1" branch="false" />
+                <line number="151" hits="1" branch="false" />
+                <line number="153" hits="0" branch="true" condition-coverage="0% (0/4)" />
+                <line number="154" hits="0" branch="false" />
+                <line number="155" hits="0" branch="false" />
+                <line number="157" hits="0" branch="false" />
+                <line number="158" hits="0" branch="false" />
+                <line number="160" hits="3" branch="false" />
+                <line number="161" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="GetNextDateOnceMessage" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="164" hits="10" branch="false" />
+                <line number="165" hits="10" branch="true" condition-coverage="100% (2/2)" />
+                <line number="166" hits="1" branch="false" />
+                <line number="167" hits="1" branch="false" />
+                <line number="170" hits="9" branch="false" />
+                <line number="171" hits="9" branch="false" />
+                <line number="172" hits="9" branch="false" />
+              </lines>
+            </method>
+            <method name="ValidateDateLimits" signature="(...)" line-rate="1" branch-rate="1" complexity="10">
+              <lines>
+                <line number="175" hits="13" branch="false" />
+                <line number="176" hits="13" branch="true" condition-coverage="100% (2/2)" />
+                <line number="177" hits="13" branch="true" condition-coverage="100% (2/2)" />
+                <line number="179" hits="13" branch="true" condition-coverage="100% (6/6)" />
+                <line number="180" hits="13" branch="false" />
+                <line number="181" hits="3" branch="false" />
+                <line number="182" hits="3" branch="false" />
+                <line number="184" hits="10" branch="false" />
+                <line number="185" hits="13" branch="false" />
+              </lines>
+            </method>
+            <method name="ValidateGeneralData" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="188" hits="24" branch="false" />
+                <line number="189" hits="24" branch="false" />
+                <line number="190" hits="23" branch="false" />
+                <line number="191" hits="22" branch="false" />
+                <line number="192" hits="22" branch="false" />
+              </lines>
+            </method>
+            <method name="ValidateTypeOfSchedule" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="195" hits="24" branch="false" />
+                <line number="196" hits="24" branch="true" condition-coverage="100% (2/2)" />
+                <line number="197" hits="1" branch="false" />
+                <line number="198" hits="1" branch="false" />
+                <line number="200" hits="23" branch="false" />
+              </lines>
+            </method>
+            <method name="GetNextDateWeekly" signature="(...)" line-rate="1" branch-rate="1" complexity="4">
+              <lines>
+                <line number="203" hits="5" branch="false" />
+                <line number="204" hits="5" branch="true" condition-coverage="100% (2/2)" />
+                <line number="205" hits="1" branch="false" />
+                <line number="206" hits="1" branch="false" />
+                <line number="209" hits="4" branch="true" condition-coverage="100% (2/2)" />
+                <line number="210" hits="1" branch="false" />
+                <line number="211" hits="1" branch="false" />
+                <line number="213" hits="3" branch="false" />
+                <line number="214" hits="4" branch="false" />
+              </lines>
+            </method>
+            <method name="GetNextDateWeeklyWithDailyFrecuency" signature="(...)" line-rate="0.7037037037037037" branch-rate="0.5" complexity="16">
+              <lines>
+                <line number="217" hits="3" branch="false" />
+                <line number="218" hits="3" branch="true" condition-coverage="50% (1/2)" />
+                <line number="219" hits="3" branch="true" condition-coverage="50% (1/2)" />
+                <line number="221" hits="3" branch="false" />
+                <line number="222" hits="3" branch="false" />
+                <line number="224" hits="3" branch="true" condition-coverage="50% (2/4)" />
+                <line number="225" hits="0" branch="false" />
+                <line number="226" hits="0" branch="false" />
+                <line number="227" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="228" hits="0" branch="false" />
+                <line number="229" hits="0" branch="false" />
+                <line number="231" hits="0" branch="false" />
+                <line number="232" hits="3" branch="true" condition-coverage="50% (1/2)" />
+                <line number="233" hits="3" branch="false" />
+                <line number="235" hits="3" branch="false" />
+                <line number="236" hits="3" branch="false" />
+                <line number="237" hits="3" branch="true" condition-coverage="100% (2/2)" />
+                <line number="238" hits="2" branch="false" />
+                <line number="239" hits="2" branch="false" />
+                <line number="243" hits="1" branch="false" />
+                <line number="244" hits="1" branch="false" />
+                <line number="246" hits="1" branch="true" condition-coverage="50% (1/2)" />
+                <line number="247" hits="1" branch="false" />
+                <line number="248" hits="1" branch="false" />
+                <line number="250" hits="0" branch="false" />
+                <line number="251" hits="0" branch="false" />
+                <line number="252" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="GetNextDateWeeklyWithDailyFrecuencyMessage" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="255" hits="3" branch="false" />
+                <line number="256" hits="3" branch="false" />
+                <line number="257" hits="3" branch="false" />
+                <line number="258" hits="3" branch="false" />
+                <line number="259" hits="3" branch="false" />
+                <line number="260" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="GetNextDayInWeek" signature="(...)" line-rate="1" branch-rate="1" complexity="6">
+              <lines>
+                <line number="264" hits="4" branch="false" />
+                <line number="265" hits="41" branch="true" condition-coverage="100% (2/2)" />
+                <line number="266" hits="16" branch="false" />
+                <line number="267" hits="16" branch="true" condition-coverage="100% (4/4)" />
+                <line number="268" hits="3" branch="false" />
+                <line number="269" hits="3" branch="false" />
+                <line number="271" hits="13" branch="false" />
+                <line number="272" hits="1" branch="false" />
+                <line number="273" hits="4" branch="false" />
+              </lines>
+            </method>
+            <method name="GetNextDateWeeklyOnceMessage" signature="(...)" line-rate="0.5833333333333334" branch-rate="0.5714285714285714" complexity="14">
+              <lines>
+                <line number="276" hits="1" branch="false" />
+                <line number="277" hits="1" branch="false" />
+                <line number="278" hits="1" branch="true" condition-coverage="100% (2/2)" />
+                <line number="279" hits="1" branch="false" />
+                <line number="280" hits="1" branch="true" condition-coverage="63% (5/8)" />
+                <line number="281" hits="1" branch="false" />
+                <line number="282" hits="1" branch="false" />
+                <line number="283" hits="1" branch="false" />
+                <line number="284" hits="1" branch="false" />
+                <line number="285" hits="1" branch="false" />
+                <line number="286" hits="1" branch="true" condition-coverage="50% (1/2)" />
+                <line number="287" hits="0" branch="false" />
+                <line number="288" hits="0" branch="false" />
+                <line number="289" hits="0" branch="false" />
+                <line number="290" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="291" hits="0" branch="false" />
+                <line number="292" hits="0" branch="false" />
+                <line number="293" hits="0" branch="false" />
+                <line number="294" hits="0" branch="false" />
+                <line number="296" hits="0" branch="false" />
+                <line number="297" hits="0" branch="false" />
+                <line number="298" hits="1" branch="false" />
+                <line number="299" hits="1" branch="false" />
+                <line number="300" hits="1" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="12" hits="24" branch="false" />
+            <line number="13" hits="24" branch="false" />
+            <line number="15" hits="22" branch="true" condition-coverage="100% (2/2)" />
+            <line number="16" hits="10" branch="false" />
+            <line number="17" hits="10" branch="false" />
+            <line number="19" hits="12" branch="false" />
+            <line number="20" hits="17" branch="false" />
+            <line number="23" hits="12" branch="false" />
+            <line number="24" hits="12" branch="true" condition-coverage="100% (4/4)" />
+            <line number="25" hits="12" branch="false" />
+            <line number="26" hits="12" branch="false" />
+            <line number="28" hits="12" branch="true" condition-coverage="100% (2/2)" />
+            <line number="29" hits="7" branch="false" />
+            <line number="30" hits="7" branch="false" />
+            <line number="32" hits="5" branch="false" />
+            <line number="33" hits="8" branch="false" />
+            <line number="36" hits="7" branch="false" />
+            <line number="37" hits="7" branch="true" condition-coverage="50% (1/2)" />
+            <line number="38" hits="0" branch="false" />
+            <line number="39" hits="0" branch="false" />
+            <line number="41" hits="7" branch="true" condition-coverage="100% (2/2)" />
+            <line number="42" hits="4" branch="false" />
+            <line number="43" hits="4" branch="false" />
+            <line number="45" hits="3" branch="false" />
+            <line number="46" hits="4" branch="false" />
+            <line number="49" hits="4" branch="false" />
+            <line number="52" hits="4" branch="true" condition-coverage="80% (8/10)" />
+            <line number="53" hits="4" branch="false" />
+            <line number="54" hits="2" branch="false" />
+            <line number="55" hits="2" branch="false" />
+            <line number="56" hits="2" branch="false" />
+            <line number="58" hits="2" branch="false" />
+            <line number="59" hits="2" branch="false" />
+            <line number="60" hits="2" branch="false" />
+            <line number="61" hits="4" branch="false" />
+            <line number="62" hits="4" branch="false" />
+            <line number="63" hits="4" branch="false" />
+            <line number="66" hits="3" branch="false" />
+            <line number="67" hits="3" branch="true" condition-coverage="50% (1/2)" />
+            <line number="68" hits="3" branch="true" condition-coverage="50% (1/2)" />
+            <line number="70" hits="3" branch="false" />
+            <line number="72" hits="0" branch="false" />
+            <line number="74" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="75" hits="0" branch="false" />
+            <line number="76" hits="0" branch="false" />
+            <line number="77" hits="0" branch="false" />
+            <line number="78" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="79" hits="0" branch="false" />
+            <line number="80" hits="0" branch="false" />
+            <line number="81" hits="0" branch="false" />
+            <line number="82" hits="0" branch="false" />
+            <line number="84" hits="0" branch="false" />
+            <line number="85" hits="0" branch="false" />
+            <line number="86" hits="0" branch="false" />
+            <line number="89" hits="0" branch="false" />
+            <line number="90" hits="0" branch="true" condition-coverage="0% (0/8)" />
+            <line number="91" hits="0" branch="false" />
+            <line number="92" hits="0" branch="false" />
+            <line number="93" hits="0" branch="false" />
+            <line number="94" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="95" hits="0" branch="false" />
+            <line number="96" hits="0" branch="false" />
+            <line number="98" hits="0" branch="false" />
+            <line number="99" hits="0" branch="false" />
+            <line number="100" hits="0" branch="false" />
+            <line number="103" hits="0" branch="false" />
+            <line number="104" hits="0" branch="false" />
+            <line number="105" hits="0" branch="false" />
+            <line number="106" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="107" hits="0" branch="false" />
+            <line number="108" hits="0" branch="true" condition-coverage="0% (0/4)" />
+            <line number="109" hits="0" branch="false" />
+            <line number="110" hits="0" branch="false" />
+            <line number="111" hits="0" branch="false" />
+            <line number="113" hits="0" branch="false" />
+            <line number="114" hits="0" branch="false" />
+            <line number="115" hits="0" branch="false" />
+            <line number="116" hits="0" branch="false" />
+            <line number="117" hits="0" branch="false" />
+            <line number="118" hits="0" branch="false" />
+            <line number="121" hits="6" branch="false" />
+            <line number="122" hits="6" branch="false" />
+            <line number="124" hits="6" branch="true" condition-coverage="100% (4/4)" />
+            <line number="127" hits="4" branch="true" condition-coverage="100% (2/2)" />
+            <line number="128" hits="1" branch="false" />
+            <line number="129" hits="1" branch="false" />
+            <line number="131" hits="3" branch="true" condition-coverage="50% (2/4)" />
+            <line number="132" hits="0" branch="false" />
+            <line number="133" hits="0" branch="false" />
+            <line number="135" hits="3" branch="false" />
+            <line number="136" hits="3" branch="false" />
+            <line number="138" hits="1" branch="true" condition-coverage="50% (1/2)" />
+            <line number="139" hits="1" branch="false" />
+            <line number="140" hits="1" branch="false" />
+            <line number="142" hits="0" branch="true" condition-coverage="0% (0/4)" />
+            <line number="143" hits="0" branch="false" />
+            <line number="144" hits="0" branch="false" />
+            <line number="146" hits="0" branch="false" />
+            <line number="147" hits="0" branch="false" />
+            <line number="149" hits="1" branch="true" condition-coverage="50% (1/2)" />
+            <line number="150" hits="1" branch="false" />
+            <line number="151" hits="1" branch="false" />
+            <line number="153" hits="0" branch="true" condition-coverage="0% (0/4)" />
+            <line number="154" hits="0" branch="false" />
+            <line number="155" hits="0" branch="false" />
+            <line number="157" hits="0" branch="false" />
+            <line number="158" hits="0" branch="false" />
+            <line number="160" hits="3" branch="false" />
+            <line number="161" hits="3" branch="false" />
+            <line number="164" hits="10" branch="false" />
+            <line number="165" hits="10" branch="true" condition-coverage="100% (2/2)" />
+            <line number="166" hits="1" branch="false" />
+            <line number="167" hits="1" branch="false" />
+            <line number="170" hits="9" branch="false" />
+            <line number="171" hits="9" branch="false" />
+            <line number="172" hits="9" branch="false" />
+            <line number="175" hits="13" branch="false" />
+            <line number="176" hits="13" branch="true" condition-coverage="100% (2/2)" />
+            <line number="177" hits="13" branch="true" condition-coverage="100% (2/2)" />
+            <line number="179" hits="13" branch="true" condition-coverage="100% (6/6)" />
+            <line number="180" hits="13" branch="false" />
+            <line number="181" hits="3" branch="false" />
+            <line number="182" hits="3" branch="false" />
+            <line number="184" hits="10" branch="false" />
+            <line number="185" hits="13" branch="false" />
+            <line number="188" hits="24" branch="false" />
+            <line number="189" hits="24" branch="false" />
+            <line number="190" hits="23" branch="false" />
+            <line number="191" hits="22" branch="false" />
+            <line number="192" hits="22" branch="false" />
+            <line number="195" hits="24" branch="false" />
+            <line number="196" hits="24" branch="true" condition-coverage="100% (2/2)" />
+            <line number="197" hits="1" branch="false" />
+            <line number="198" hits="1" branch="false" />
+            <line number="200" hits="23" branch="false" />
+            <line number="203" hits="5" branch="false" />
+            <line number="204" hits="5" branch="true" condition-coverage="100% (2/2)" />
+            <line number="205" hits="1" branch="false" />
+            <line number="206" hits="1" branch="false" />
+            <line number="209" hits="4" branch="true" condition-coverage="100% (2/2)" />
+            <line number="210" hits="1" branch="false" />
+            <line number="211" hits="1" branch="false" />
+            <line number="213" hits="3" branch="false" />
+            <line number="214" hits="4" branch="false" />
+            <line number="217" hits="3" branch="false" />
+            <line number="218" hits="3" branch="true" condition-coverage="50% (1/2)" />
+            <line number="219" hits="3" branch="true" condition-coverage="50% (1/2)" />
+            <line number="221" hits="3" branch="false" />
+            <line number="222" hits="3" branch="false" />
+            <line number="224" hits="3" branch="true" condition-coverage="50% (2/4)" />
+            <line number="225" hits="0" branch="false" />
+            <line number="226" hits="0" branch="false" />
+            <line number="227" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="228" hits="0" branch="false" />
+            <line number="229" hits="0" branch="false" />
+            <line number="231" hits="0" branch="false" />
+            <line number="232" hits="3" branch="true" condition-coverage="50% (1/2)" />
+            <line number="233" hits="3" branch="false" />
+            <line number="235" hits="3" branch="false" />
+            <line number="236" hits="3" branch="false" />
+            <line number="237" hits="3" branch="true" condition-coverage="100% (2/2)" />
+            <line number="238" hits="2" branch="false" />
+            <line number="239" hits="2" branch="false" />
+            <line number="243" hits="1" branch="false" />
+            <line number="244" hits="1" branch="false" />
+            <line number="246" hits="1" branch="true" condition-coverage="50% (1/2)" />
+            <line number="247" hits="1" branch="false" />
+            <line number="248" hits="1" branch="false" />
+            <line number="250" hits="0" branch="false" />
+            <line number="251" hits="0" branch="false" />
+            <line number="252" hits="3" branch="false" />
+            <line number="255" hits="3" branch="false" />
+            <line number="256" hits="3" branch="false" />
+            <line number="257" hits="3" branch="false" />
+            <line number="258" hits="3" branch="false" />
+            <line number="259" hits="3" branch="false" />
+            <line number="260" hits="3" branch="false" />
+            <line number="264" hits="4" branch="false" />
+            <line number="265" hits="41" branch="true" condition-coverage="100% (2/2)" />
+            <line number="266" hits="16" branch="false" />
+            <line number="267" hits="16" branch="true" condition-coverage="100% (4/4)" />
+            <line number="268" hits="3" branch="false" />
+            <line number="269" hits="3" branch="false" />
+            <line number="271" hits="13" branch="false" />
+            <line number="272" hits="1" branch="false" />
+            <line number="273" hits="4" branch="false" />
+            <line number="276" hits="1" branch="false" />
+            <line number="277" hits="1" branch="false" />
+            <line number="278" hits="1" branch="true" condition-coverage="100% (2/2)" />
+            <line number="279" hits="1" branch="false" />
+            <line number="280" hits="1" branch="true" condition-coverage="63% (5/8)" />
+            <line number="281" hits="1" branch="false" />
+            <line number="282" hits="1" branch="false" />
+            <line number="283" hits="1" branch="false" />
+            <line number="284" hits="1" branch="false" />
+            <line number="285" hits="1" branch="false" />
+            <line number="286" hits="1" branch="true" condition-coverage="50% (1/2)" />
+            <line number="287" hits="0" branch="false" />
+            <line number="288" hits="0" branch="false" />
+            <line number="289" hits="0" branch="false" />
+            <line number="290" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="291" hits="0" branch="false" />
+            <line number="292" hits="0" branch="false" />
+            <line number="293" hits="0" branch="false" />
+            <line number="294" hits="0" branch="false" />
+            <line number="296" hits="0" branch="false" />
+            <line number="297" hits="0" branch="false" />
+            <line number="298" hits="1" branch="false" />
+            <line number="299" hits="1" branch="false" />
+            <line number="300" hits="1" branch="false" />
+          </lines>
+        </class>
+        <class name="Scheduler.Validator" filename="D:\Escritorio\Scheduler\Project\Scheduler\Scheduler\Validator.cs" line-rate="0.9333333333333333" branch-rate="0.8333333333333334" complexity="18">
+          <methods>
+            <method name="ValidateLimitDates" signature="(...)" line-rate="1" branch-rate="0.875" complexity="8">
+              <lines>
+                <line number="13" hits="24" branch="false" />
+                <line number="14" hits="24" branch="true" condition-coverage="88% (7/8)" />
+                <line number="15" hits="2" branch="false" />
+                <line number="16" hits="2" branch="false" />
+                <line number="18" hits="22" branch="false" />
+              </lines>
+            </method>
+            <method name="ValidateLimitHours" signature="(...)" line-rate="1" branch-rate="0.875" complexity="8">
+              <lines>
+                <line number="21" hits="23" branch="false" />
+                <line number="22" hits="23" branch="true" condition-coverage="88% (7/8)" />
+                <line number="23" hits="1" branch="false" />
+                <line number="24" hits="1" branch="false" />
+                <line number="26" hits="22" branch="false" />
+              </lines>
+            </method>
+            <method name="ValidatePositiveNumber" signature="(...)" line-rate="0.8" branch-rate="0.5" complexity="2">
+              <lines>
+                <line number="29" hits="2" branch="false" />
+                <line number="30" hits="2" branch="true" condition-coverage="50% (1/2)" />
+                <line number="31" hits="2" branch="false" />
+                <line number="32" hits="2" branch="false" />
+                <line number="34" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="13" hits="24" branch="false" />
+            <line number="14" hits="24" branch="true" condition-coverage="88% (7/8)" />
+            <line number="15" hits="2" branch="false" />
+            <line number="16" hits="2" branch="false" />
+            <line number="18" hits="22" branch="false" />
+            <line number="21" hits="23" branch="false" />
+            <line number="22" hits="23" branch="true" condition-coverage="88% (7/8)" />
+            <line number="23" hits="1" branch="false" />
+            <line number="24" hits="1" branch="false" />
+            <line number="26" hits="22" branch="false" />
+            <line number="29" hits="2" branch="false" />
+            <line number="30" hits="2" branch="true" condition-coverage="50% (1/2)" />
+            <line number="31" hits="2" branch="false" />
+            <line number="32" hits="2" branch="false" />
+            <line number="34" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="Scheduler.Week" filename="D:\Escritorio\Scheduler\Project\Scheduler\Scheduler\Week.cs" line-rate="1" branch-rate="1" complexity="12">
+          <methods>
+            <method name="get_Monday" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="13" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Tuesday" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="17" hits="12" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Wednesday" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="18" hits="12" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Thursday" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="19" hits="12" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Friday" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="12" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Saturday" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="21" hits="12" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Sunday" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="22" hits="13" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Days" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="24" hits="12" branch="false" />
+              </lines>
+            </method>
+            <method name="SetDays" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="27" hits="6" branch="false" />
+                <line number="28" hits="6" branch="false" />
+                <line number="29" hits="6" branch="false" />
+                <line number="30" hits="6" branch="false" />
+                <line number="31" hits="6" branch="false" />
+                <line number="32" hits="6" branch="false" />
+                <line number="33" hits="6" branch="false" />
+                <line number="34" hits="6" branch="false" />
+                <line number="36" hits="6" branch="false" />
+                <line number="37" hits="6" branch="false" />
+              </lines>
+            </method>
+            <method name="GetDay" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="40" hits="1" branch="false" />
+                <line number="41" hits="3" branch="false" />
+                <line number="42" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="GetNextWeek" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="45" hits="1" branch="false" />
+                <line number="46" hits="1" branch="false" />
+                <line number="47" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="6" branch="false" />
+                <line number="12" hits="6" branch="false" />
+                <line number="13" hits="6" branch="false" />
+                <line number="14" hits="6" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="6" branch="false" />
+            <line number="12" hits="6" branch="false" />
+            <line number="13" hits="6" branch="false" />
+            <line number="14" hits="6" branch="false" />
+            <line number="16" hits="13" branch="false" />
+            <line number="17" hits="12" branch="false" />
+            <line number="18" hits="12" branch="false" />
+            <line number="19" hits="12" branch="false" />
+            <line number="20" hits="12" branch="false" />
+            <line number="21" hits="12" branch="false" />
+            <line number="22" hits="13" branch="false" />
+            <line number="24" hits="12" branch="false" />
+            <line number="27" hits="6" branch="false" />
+            <line number="28" hits="6" branch="false" />
+            <line number="29" hits="6" branch="false" />
+            <line number="30" hits="6" branch="false" />
+            <line number="31" hits="6" branch="false" />
+            <line number="32" hits="6" branch="false" />
+            <line number="33" hits="6" branch="false" />
+            <line number="34" hits="6" branch="false" />
+            <line number="36" hits="6" branch="false" />
+            <line number="37" hits="6" branch="false" />
+            <line number="40" hits="1" branch="false" />
+            <line number="41" hits="3" branch="false" />
+            <line number="42" hits="1" branch="false" />
+            <line number="45" hits="1" branch="false" />
+            <line number="46" hits="1" branch="false" />
+            <line number="47" hits="1" branch="false" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Scheduler.Test" line-rate="0.9935691318327974" branch-rate="1" complexity="31">
+      <classes>
+        <class name="AutoGeneratedProgram" filename="C:\Users\inesd\.nuget\packages\microsoft.net.test.sdk\16.9.4\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="Main" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="4" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="4" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="Scheduler.Test.SchedulerTest" filename="D:\Escritorio\Scheduler\Project\Scheduler\Scheduler.Test\SchedulerTest.cs" line-rate="0.996309963099631" branch-rate="1" complexity="24">
+          <methods>
+            <method name="Once_type_schedule_should_return_datetime_config_as_next_date_if_it_is__exactly_current_date" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="1" branch="false" />
+                <line number="14" hits="1" branch="false" />
+                <line number="15" hits="1" branch="false" />
+                <line number="16" hits="1" branch="false" />
+                <line number="17" hits="1" branch="false" />
+                <line number="18" hits="1" branch="false" />
+                <line number="19" hits="1" branch="false" />
+                <line number="21" hits="1" branch="false" />
+                <line number="22" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="Once_type_schedule_should_return_datetime_config_as_next_date_if_it_is_after_current_hour" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="26" hits="1" branch="false" />
+                <line number="27" hits="1" branch="false" />
+                <line number="28" hits="1" branch="false" />
+                <line number="29" hits="1" branch="false" />
+                <line number="30" hits="1" branch="false" />
+                <line number="31" hits="1" branch="false" />
+                <line number="32" hits="1" branch="false" />
+                <line number="34" hits="1" branch="false" />
+                <line number="35" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="Once_type_schedule_should_return_datetime_config_as_next_date_if_it_is_after_current_day" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="39" hits="1" branch="false" />
+                <line number="40" hits="1" branch="false" />
+                <line number="41" hits="1" branch="false" />
+                <line number="42" hits="1" branch="false" />
+                <line number="43" hits="1" branch="false" />
+                <line number="44" hits="1" branch="false" />
+                <line number="45" hits="1" branch="false" />
+                <line number="47" hits="1" branch="false" />
+                <line number="48" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="Once_type_schedule_should_return_empty_string_if_next_date_is_before_current_day" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="52" hits="1" branch="false" />
+                <line number="53" hits="1" branch="false" />
+                <line number="54" hits="1" branch="false" />
+                <line number="55" hits="1" branch="false" />
+                <line number="56" hits="1" branch="false" />
+                <line number="57" hits="1" branch="false" />
+                <line number="58" hits="1" branch="false" />
+                <line number="60" hits="1" branch="false" />
+                <line number="61" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="Once_type_schedule_should_return_empty_string_if_next_date_is_before_start_day" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="65" hits="1" branch="false" />
+                <line number="66" hits="1" branch="false" />
+                <line number="67" hits="1" branch="false" />
+                <line number="68" hits="1" branch="false" />
+                <line number="69" hits="1" branch="false" />
+                <line number="70" hits="1" branch="false" />
+                <line number="71" hits="1" branch="false" />
+                <line number="72" hits="1" branch="false" />
+                <line number="74" hits="1" branch="false" />
+                <line number="75" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="Once_type_schedule_should_return_empty_string_if_next_date_is_after_end_day" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="79" hits="1" branch="false" />
+                <line number="80" hits="1" branch="false" />
+                <line number="81" hits="1" branch="false" />
+                <line number="82" hits="1" branch="false" />
+                <line number="83" hits="1" branch="false" />
+                <line number="84" hits="1" branch="false" />
+                <line number="85" hits="1" branch="false" />
+                <line number="86" hits="1" branch="false" />
+                <line number="88" hits="1" branch="false" />
+                <line number="89" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="Once_type_schedule_should_return_datetime_config_as_next_date_if_it_is_between_limit_dates" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="93" hits="1" branch="false" />
+                <line number="94" hits="1" branch="false" />
+                <line number="95" hits="1" branch="false" />
+                <line number="96" hits="1" branch="false" />
+                <line number="97" hits="1" branch="false" />
+                <line number="98" hits="1" branch="false" />
+                <line number="99" hits="1" branch="false" />
+                <line number="100" hits="1" branch="false" />
+                <line number="101" hits="1" branch="false" />
+                <line number="103" hits="1" branch="false" />
+                <line number="104" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="Once_type_schedule_should_return_datetime_config_as_next_date_if_it_is_after_start_day" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="108" hits="1" branch="false" />
+                <line number="109" hits="1" branch="false" />
+                <line number="110" hits="1" branch="false" />
+                <line number="111" hits="1" branch="false" />
+                <line number="112" hits="1" branch="false" />
+                <line number="113" hits="1" branch="false" />
+                <line number="114" hits="1" branch="false" />
+                <line number="115" hits="1" branch="false" />
+                <line number="117" hits="1" branch="false" />
+                <line number="118" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="Once_type_schedule_should_return_datetime_config_as_next_date_if_it_is_before_end_day" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="122" hits="1" branch="false" />
+                <line number="123" hits="1" branch="false" />
+                <line number="124" hits="1" branch="false" />
+                <line number="125" hits="1" branch="false" />
+                <line number="126" hits="1" branch="false" />
+                <line number="127" hits="1" branch="false" />
+                <line number="128" hits="1" branch="false" />
+                <line number="129" hits="1" branch="false" />
+                <line number="131" hits="1" branch="false" />
+                <line number="132" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="Once_type_schedule_should_throw_exception_if_TypeOfSchedule_is_null" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="136" hits="1" branch="false" />
+                <line number="137" hits="1" branch="false" />
+                <line number="138" hits="1" branch="false" />
+                <line number="139" hits="1" branch="false" />
+                <line number="140" hits="1" branch="false" />
+                <line number="141" hits="1" branch="false" />
+                <line number="143" hits="2" branch="false" />
+                <line number="144" hits="1" branch="false" />
+                <line number="145" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="Once_type_schedule_should_throw_exception_if_DateOnce_is_null" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="149" hits="1" branch="false" />
+                <line number="150" hits="1" branch="false" />
+                <line number="151" hits="1" branch="false" />
+                <line number="152" hits="1" branch="false" />
+                <line number="153" hits="1" branch="false" />
+                <line number="154" hits="1" branch="false" />
+                <line number="156" hits="2" branch="false" />
+                <line number="157" hits="1" branch="false" />
+                <line number="158" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="Scheduler_should_throw_exception_if_start_day_is_after_end_date" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="162" hits="1" branch="false" />
+                <line number="163" hits="1" branch="false" />
+                <line number="164" hits="1" branch="false" />
+                <line number="165" hits="1" branch="false" />
+                <line number="166" hits="1" branch="false" />
+                <line number="167" hits="1" branch="false" />
+                <line number="168" hits="1" branch="false" />
+                <line number="169" hits="1" branch="false" />
+                <line number="171" hits="2" branch="false" />
+                <line number="172" hits="1" branch="false" />
+                <line number="173" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="Schedule_dailyFrecuency_nextDate_should_be_current_date_if_HourOnce_is_after_current_hour" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="177" hits="1" branch="false" />
+                <line number="178" hits="1" branch="false" />
+                <line number="179" hits="1" branch="false" />
+                <line number="180" hits="1" branch="false" />
+                <line number="181" hits="1" branch="false" />
+                <line number="182" hits="1" branch="false" />
+                <line number="183" hits="1" branch="false" />
+                <line number="184" hits="1" branch="false" />
+                <line number="186" hits="1" branch="false" />
+                <line number="187" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="Schedule_dailyFrecuency_nextDate_should_be_current_plus_days_of_interval_when_current_hour_bigger_than_HourOnce" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="191" hits="1" branch="false" />
+                <line number="192" hits="1" branch="false" />
+                <line number="193" hits="1" branch="false" />
+                <line number="194" hits="1" branch="false" />
+                <line number="195" hits="1" branch="false" />
+                <line number="196" hits="1" branch="false" />
+                <line number="197" hits="1" branch="false" />
+                <line number="198" hits="1" branch="false" />
+                <line number="200" hits="1" branch="false" />
+                <line number="201" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="Schedule_dailyFrecuency_everyday_nextDate_should_be_next_day_when_current_hour_bigger_than_HourOnce" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="205" hits="1" branch="false" />
+                <line number="206" hits="1" branch="false" />
+                <line number="207" hits="1" branch="false" />
+                <line number="208" hits="1" branch="false" />
+                <line number="209" hits="1" branch="false" />
+                <line number="210" hits="1" branch="false" />
+                <line number="211" hits="1" branch="false" />
+                <line number="212" hits="1" branch="false" />
+                <line number="214" hits="1" branch="false" />
+                <line number="215" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="Schedule_dailyFrecuency_nextDate_should_be_startDay_when_startDay_is_after_currentDate" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="219" hits="1" branch="false" />
+                <line number="220" hits="1" branch="false" />
+                <line number="221" hits="1" branch="false" />
+                <line number="222" hits="1" branch="false" />
+                <line number="223" hits="1" branch="false" />
+                <line number="224" hits="1" branch="false" />
+                <line number="225" hits="1" branch="false" />
+                <line number="226" hits="1" branch="false" />
+                <line number="227" hits="1" branch="false" />
+                <line number="229" hits="1" branch="false" />
+                <line number="230" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="Schedule_recurring_dailyFrecuency_hour_should_have_hour_interval_determined" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="234" hits="1" branch="false" />
+                <line number="235" hits="1" branch="false" />
+                <line number="236" hits="1" branch="false" />
+                <line number="237" hits="1" branch="false" />
+                <line number="238" hits="1" branch="false" />
+                <line number="239" hits="1" branch="false" />
+                <line number="240" hits="1" branch="false" />
+                <line number="241" hits="1" branch="false" />
+                <line number="242" hits="1" branch="false" />
+                <line number="243" hits="1" branch="false" />
+                <line number="244" hits="1" branch="false" />
+                <line number="246" hits="2" branch="false" />
+                <line number="247" hits="1" branch="false" />
+                <line number="248" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="Schedule_recurring_dailyFrecuency_minute_should_have_minute_interval_determined" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="252" hits="1" branch="false" />
+                <line number="253" hits="1" branch="false" />
+                <line number="254" hits="1" branch="false" />
+                <line number="255" hits="1" branch="false" />
+                <line number="256" hits="1" branch="false" />
+                <line number="257" hits="1" branch="false" />
+                <line number="258" hits="1" branch="false" />
+                <line number="259" hits="1" branch="false" />
+                <line number="260" hits="1" branch="false" />
+                <line number="261" hits="1" branch="false" />
+                <line number="262" hits="1" branch="false" />
+                <line number="264" hits="2" branch="false" />
+                <line number="265" hits="1" branch="false" />
+                <line number="266" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="Schedule_recurring_dailyFrecuency_second_should_have_second_interval_determined" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="270" hits="1" branch="false" />
+                <line number="271" hits="1" branch="false" />
+                <line number="272" hits="1" branch="false" />
+                <line number="273" hits="1" branch="false" />
+                <line number="274" hits="1" branch="false" />
+                <line number="275" hits="1" branch="false" />
+                <line number="276" hits="1" branch="false" />
+                <line number="277" hits="1" branch="false" />
+                <line number="278" hits="1" branch="false" />
+                <line number="279" hits="1" branch="false" />
+                <line number="280" hits="1" branch="false" />
+                <line number="282" hits="2" branch="false" />
+                <line number="283" hits="1" branch="false" />
+                <line number="284" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="Next_date_should_be_current_when_day_of_week_match_and_end_hour_is_after_current_hour" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="288" hits="1" branch="false" />
+                <line number="289" hits="1" branch="false" />
+                <line number="290" hits="1" branch="false" />
+                <line number="291" hits="1" branch="false" />
+                <line number="292" hits="1" branch="false" />
+                <line number="293" hits="1" branch="false" />
+                <line number="294" hits="1" branch="false" />
+                <line number="295" hits="1" branch="false" />
+                <line number="296" hits="1" branch="false" />
+                <line number="297" hits="1" branch="false" />
+                <line number="298" hits="1" branch="false" />
+                <line number="299" hits="1" branch="false" />
+                <line number="300" hits="1" branch="false" />
+                <line number="302" hits="1" branch="false" />
+                <line number="303" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="Next_date_should_be_following_day_when_current_day_does_not_match_with_day_of_week" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="307" hits="1" branch="false" />
+                <line number="308" hits="1" branch="false" />
+                <line number="309" hits="1" branch="false" />
+                <line number="310" hits="1" branch="false" />
+                <line number="311" hits="1" branch="false" />
+                <line number="312" hits="1" branch="false" />
+                <line number="313" hits="1" branch="false" />
+                <line number="314" hits="1" branch="false" />
+                <line number="315" hits="1" branch="false" />
+                <line number="316" hits="1" branch="false" />
+                <line number="317" hits="1" branch="false" />
+                <line number="318" hits="1" branch="false" />
+                <line number="319" hits="1" branch="false" />
+                <line number="321" hits="1" branch="false" />
+                <line number="322" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="Next_date_should_be_current_day_and_start_hour_when_current_hour_is_before_start_hour" signature="()" line-rate="0.9333333333333333" branch-rate="1" complexity="1">
+              <lines>
+                <line number="326" hits="1" branch="false" />
+                <line number="327" hits="1" branch="false" />
+                <line number="328" hits="1" branch="false" />
+                <line number="329" hits="1" branch="false" />
+                <line number="330" hits="1" branch="false" />
+                <line number="331" hits="1" branch="false" />
+                <line number="332" hits="1" branch="false" />
+                <line number="333" hits="1" branch="false" />
+                <line number="334" hits="1" branch="false" />
+                <line number="335" hits="1" branch="false" />
+                <line number="336" hits="1" branch="false" />
+                <line number="337" hits="1" branch="false" />
+                <line number="338" hits="1" branch="false" />
+                <line number="340" hits="1" branch="false" />
+                <line number="341" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Next_date_should_be_on_two_weeks_when_current_day_does_not_match_with_rest_of_days_of_this_week" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="345" hits="1" branch="false" />
+                <line number="346" hits="1" branch="false" />
+                <line number="347" hits="1" branch="false" />
+                <line number="348" hits="1" branch="false" />
+                <line number="349" hits="1" branch="false" />
+                <line number="350" hits="1" branch="false" />
+                <line number="351" hits="1" branch="false" />
+                <line number="352" hits="1" branch="false" />
+                <line number="353" hits="1" branch="false" />
+                <line number="354" hits="1" branch="false" />
+                <line number="355" hits="1" branch="false" />
+                <line number="356" hits="1" branch="false" />
+                <line number="357" hits="1" branch="false" />
+                <line number="359" hits="1" branch="false" />
+                <line number="360" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="Schedule_recurring_weeklyFrecuency_should_have_minute_interval_determined" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="364" hits="1" branch="false" />
+                <line number="365" hits="1" branch="false" />
+                <line number="366" hits="1" branch="false" />
+                <line number="367" hits="1" branch="false" />
+                <line number="368" hits="1" branch="false" />
+                <line number="369" hits="1" branch="false" />
+                <line number="370" hits="1" branch="false" />
+                <line number="371" hits="1" branch="false" />
+                <line number="372" hits="1" branch="false" />
+                <line number="374" hits="2" branch="false" />
+                <line number="375" hits="1" branch="false" />
+                <line number="376" hits="1" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="13" hits="1" branch="false" />
+            <line number="14" hits="1" branch="false" />
+            <line number="15" hits="1" branch="false" />
+            <line number="16" hits="1" branch="false" />
+            <line number="17" hits="1" branch="false" />
+            <line number="18" hits="1" branch="false" />
+            <line number="19" hits="1" branch="false" />
+            <line number="21" hits="1" branch="false" />
+            <line number="22" hits="1" branch="false" />
+            <line number="26" hits="1" branch="false" />
+            <line number="27" hits="1" branch="false" />
+            <line number="28" hits="1" branch="false" />
+            <line number="29" hits="1" branch="false" />
+            <line number="30" hits="1" branch="false" />
+            <line number="31" hits="1" branch="false" />
+            <line number="32" hits="1" branch="false" />
+            <line number="34" hits="1" branch="false" />
+            <line number="35" hits="1" branch="false" />
+            <line number="39" hits="1" branch="false" />
+            <line number="40" hits="1" branch="false" />
+            <line number="41" hits="1" branch="false" />
+            <line number="42" hits="1" branch="false" />
+            <line number="43" hits="1" branch="false" />
+            <line number="44" hits="1" branch="false" />
+            <line number="45" hits="1" branch="false" />
+            <line number="47" hits="1" branch="false" />
+            <line number="48" hits="1" branch="false" />
+            <line number="52" hits="1" branch="false" />
+            <line number="53" hits="1" branch="false" />
+            <line number="54" hits="1" branch="false" />
+            <line number="55" hits="1" branch="false" />
+            <line number="56" hits="1" branch="false" />
+            <line number="57" hits="1" branch="false" />
+            <line number="58" hits="1" branch="false" />
+            <line number="60" hits="1" branch="false" />
+            <line number="61" hits="1" branch="false" />
+            <line number="65" hits="1" branch="false" />
+            <line number="66" hits="1" branch="false" />
+            <line number="67" hits="1" branch="false" />
+            <line number="68" hits="1" branch="false" />
+            <line number="69" hits="1" branch="false" />
+            <line number="70" hits="1" branch="false" />
+            <line number="71" hits="1" branch="false" />
+            <line number="72" hits="1" branch="false" />
+            <line number="74" hits="1" branch="false" />
+            <line number="75" hits="1" branch="false" />
+            <line number="79" hits="1" branch="false" />
+            <line number="80" hits="1" branch="false" />
+            <line number="81" hits="1" branch="false" />
+            <line number="82" hits="1" branch="false" />
+            <line number="83" hits="1" branch="false" />
+            <line number="84" hits="1" branch="false" />
+            <line number="85" hits="1" branch="false" />
+            <line number="86" hits="1" branch="false" />
+            <line number="88" hits="1" branch="false" />
+            <line number="89" hits="1" branch="false" />
+            <line number="93" hits="1" branch="false" />
+            <line number="94" hits="1" branch="false" />
+            <line number="95" hits="1" branch="false" />
+            <line number="96" hits="1" branch="false" />
+            <line number="97" hits="1" branch="false" />
+            <line number="98" hits="1" branch="false" />
+            <line number="99" hits="1" branch="false" />
+            <line number="100" hits="1" branch="false" />
+            <line number="101" hits="1" branch="false" />
+            <line number="103" hits="1" branch="false" />
+            <line number="104" hits="1" branch="false" />
+            <line number="108" hits="1" branch="false" />
+            <line number="109" hits="1" branch="false" />
+            <line number="110" hits="1" branch="false" />
+            <line number="111" hits="1" branch="false" />
+            <line number="112" hits="1" branch="false" />
+            <line number="113" hits="1" branch="false" />
+            <line number="114" hits="1" branch="false" />
+            <line number="115" hits="1" branch="false" />
+            <line number="117" hits="1" branch="false" />
+            <line number="118" hits="1" branch="false" />
+            <line number="122" hits="1" branch="false" />
+            <line number="123" hits="1" branch="false" />
+            <line number="124" hits="1" branch="false" />
+            <line number="125" hits="1" branch="false" />
+            <line number="126" hits="1" branch="false" />
+            <line number="127" hits="1" branch="false" />
+            <line number="128" hits="1" branch="false" />
+            <line number="129" hits="1" branch="false" />
+            <line number="131" hits="1" branch="false" />
+            <line number="132" hits="1" branch="false" />
+            <line number="136" hits="1" branch="false" />
+            <line number="137" hits="1" branch="false" />
+            <line number="138" hits="1" branch="false" />
+            <line number="139" hits="1" branch="false" />
+            <line number="140" hits="1" branch="false" />
+            <line number="141" hits="1" branch="false" />
+            <line number="143" hits="2" branch="false" />
+            <line number="144" hits="1" branch="false" />
+            <line number="145" hits="1" branch="false" />
+            <line number="149" hits="1" branch="false" />
+            <line number="150" hits="1" branch="false" />
+            <line number="151" hits="1" branch="false" />
+            <line number="152" hits="1" branch="false" />
+            <line number="153" hits="1" branch="false" />
+            <line number="154" hits="1" branch="false" />
+            <line number="156" hits="2" branch="false" />
+            <line number="157" hits="1" branch="false" />
+            <line number="158" hits="1" branch="false" />
+            <line number="162" hits="1" branch="false" />
+            <line number="163" hits="1" branch="false" />
+            <line number="164" hits="1" branch="false" />
+            <line number="165" hits="1" branch="false" />
+            <line number="166" hits="1" branch="false" />
+            <line number="167" hits="1" branch="false" />
+            <line number="168" hits="1" branch="false" />
+            <line number="169" hits="1" branch="false" />
+            <line number="171" hits="2" branch="false" />
+            <line number="172" hits="1" branch="false" />
+            <line number="173" hits="1" branch="false" />
+            <line number="177" hits="1" branch="false" />
+            <line number="178" hits="1" branch="false" />
+            <line number="179" hits="1" branch="false" />
+            <line number="180" hits="1" branch="false" />
+            <line number="181" hits="1" branch="false" />
+            <line number="182" hits="1" branch="false" />
+            <line number="183" hits="1" branch="false" />
+            <line number="184" hits="1" branch="false" />
+            <line number="186" hits="1" branch="false" />
+            <line number="187" hits="1" branch="false" />
+            <line number="191" hits="1" branch="false" />
+            <line number="192" hits="1" branch="false" />
+            <line number="193" hits="1" branch="false" />
+            <line number="194" hits="1" branch="false" />
+            <line number="195" hits="1" branch="false" />
+            <line number="196" hits="1" branch="false" />
+            <line number="197" hits="1" branch="false" />
+            <line number="198" hits="1" branch="false" />
+            <line number="200" hits="1" branch="false" />
+            <line number="201" hits="1" branch="false" />
+            <line number="205" hits="1" branch="false" />
+            <line number="206" hits="1" branch="false" />
+            <line number="207" hits="1" branch="false" />
+            <line number="208" hits="1" branch="false" />
+            <line number="209" hits="1" branch="false" />
+            <line number="210" hits="1" branch="false" />
+            <line number="211" hits="1" branch="false" />
+            <line number="212" hits="1" branch="false" />
+            <line number="214" hits="1" branch="false" />
+            <line number="215" hits="1" branch="false" />
+            <line number="219" hits="1" branch="false" />
+            <line number="220" hits="1" branch="false" />
+            <line number="221" hits="1" branch="false" />
+            <line number="222" hits="1" branch="false" />
+            <line number="223" hits="1" branch="false" />
+            <line number="224" hits="1" branch="false" />
+            <line number="225" hits="1" branch="false" />
+            <line number="226" hits="1" branch="false" />
+            <line number="227" hits="1" branch="false" />
+            <line number="229" hits="1" branch="false" />
+            <line number="230" hits="1" branch="false" />
+            <line number="234" hits="1" branch="false" />
+            <line number="235" hits="1" branch="false" />
+            <line number="236" hits="1" branch="false" />
+            <line number="237" hits="1" branch="false" />
+            <line number="238" hits="1" branch="false" />
+            <line number="239" hits="1" branch="false" />
+            <line number="240" hits="1" branch="false" />
+            <line number="241" hits="1" branch="false" />
+            <line number="242" hits="1" branch="false" />
+            <line number="243" hits="1" branch="false" />
+            <line number="244" hits="1" branch="false" />
+            <line number="246" hits="2" branch="false" />
+            <line number="247" hits="1" branch="false" />
+            <line number="248" hits="1" branch="false" />
+            <line number="252" hits="1" branch="false" />
+            <line number="253" hits="1" branch="false" />
+            <line number="254" hits="1" branch="false" />
+            <line number="255" hits="1" branch="false" />
+            <line number="256" hits="1" branch="false" />
+            <line number="257" hits="1" branch="false" />
+            <line number="258" hits="1" branch="false" />
+            <line number="259" hits="1" branch="false" />
+            <line number="260" hits="1" branch="false" />
+            <line number="261" hits="1" branch="false" />
+            <line number="262" hits="1" branch="false" />
+            <line number="264" hits="2" branch="false" />
+            <line number="265" hits="1" branch="false" />
+            <line number="266" hits="1" branch="false" />
+            <line number="270" hits="1" branch="false" />
+            <line number="271" hits="1" branch="false" />
+            <line number="272" hits="1" branch="false" />
+            <line number="273" hits="1" branch="false" />
+            <line number="274" hits="1" branch="false" />
+            <line number="275" hits="1" branch="false" />
+            <line number="276" hits="1" branch="false" />
+            <line number="277" hits="1" branch="false" />
+            <line number="278" hits="1" branch="false" />
+            <line number="279" hits="1" branch="false" />
+            <line number="280" hits="1" branch="false" />
+            <line number="282" hits="2" branch="false" />
+            <line number="283" hits="1" branch="false" />
+            <line number="284" hits="1" branch="false" />
+            <line number="288" hits="1" branch="false" />
+            <line number="289" hits="1" branch="false" />
+            <line number="290" hits="1" branch="false" />
+            <line number="291" hits="1" branch="false" />
+            <line number="292" hits="1" branch="false" />
+            <line number="293" hits="1" branch="false" />
+            <line number="294" hits="1" branch="false" />
+            <line number="295" hits="1" branch="false" />
+            <line number="296" hits="1" branch="false" />
+            <line number="297" hits="1" branch="false" />
+            <line number="298" hits="1" branch="false" />
+            <line number="299" hits="1" branch="false" />
+            <line number="300" hits="1" branch="false" />
+            <line number="302" hits="1" branch="false" />
+            <line number="303" hits="1" branch="false" />
+            <line number="307" hits="1" branch="false" />
+            <line number="308" hits="1" branch="false" />
+            <line number="309" hits="1" branch="false" />
+            <line number="310" hits="1" branch="false" />
+            <line number="311" hits="1" branch="false" />
+            <line number="312" hits="1" branch="false" />
+            <line number="313" hits="1" branch="false" />
+            <line number="314" hits="1" branch="false" />
+            <line number="315" hits="1" branch="false" />
+            <line number="316" hits="1" branch="false" />
+            <line number="317" hits="1" branch="false" />
+            <line number="318" hits="1" branch="false" />
+            <line number="319" hits="1" branch="false" />
+            <line number="321" hits="1" branch="false" />
+            <line number="322" hits="1" branch="false" />
+            <line number="326" hits="1" branch="false" />
+            <line number="327" hits="1" branch="false" />
+            <line number="328" hits="1" branch="false" />
+            <line number="329" hits="1" branch="false" />
+            <line number="330" hits="1" branch="false" />
+            <line number="331" hits="1" branch="false" />
+            <line number="332" hits="1" branch="false" />
+            <line number="333" hits="1" branch="false" />
+            <line number="334" hits="1" branch="false" />
+            <line number="335" hits="1" branch="false" />
+            <line number="336" hits="1" branch="false" />
+            <line number="337" hits="1" branch="false" />
+            <line number="338" hits="1" branch="false" />
+            <line number="340" hits="1" branch="false" />
+            <line number="341" hits="0" branch="false" />
+            <line number="345" hits="1" branch="false" />
+            <line number="346" hits="1" branch="false" />
+            <line number="347" hits="1" branch="false" />
+            <line number="348" hits="1" branch="false" />
+            <line number="349" hits="1" branch="false" />
+            <line number="350" hits="1" branch="false" />
+            <line number="351" hits="1" branch="false" />
+            <line number="352" hits="1" branch="false" />
+            <line number="353" hits="1" branch="false" />
+            <line number="354" hits="1" branch="false" />
+            <line number="355" hits="1" branch="false" />
+            <line number="356" hits="1" branch="false" />
+            <line number="357" hits="1" branch="false" />
+            <line number="359" hits="1" branch="false" />
+            <line number="360" hits="1" branch="false" />
+            <line number="364" hits="1" branch="false" />
+            <line number="365" hits="1" branch="false" />
+            <line number="366" hits="1" branch="false" />
+            <line number="367" hits="1" branch="false" />
+            <line number="368" hits="1" branch="false" />
+            <line number="369" hits="1" branch="false" />
+            <line number="370" hits="1" branch="false" />
+            <line number="371" hits="1" branch="false" />
+            <line number="372" hits="1" branch="false" />
+            <line number="374" hits="2" branch="false" />
+            <line number="375" hits="1" branch="false" />
+            <line number="376" hits="1" branch="false" />
+          </lines>
+        </class>
+        <class name="Scheduler.Test.ValidatorTest" filename="D:\Escritorio\Scheduler\Project\Scheduler\Scheduler.Test\ValidatorTest.cs" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name="Start_Date_Bigger_Than_End_Date_Should_Throw_Exception" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="17" hits="1" branch="false" />
+                <line number="18" hits="1" branch="false" />
+                <line number="19" hits="1" branch="false" />
+                <line number="21" hits="2" branch="false" />
+                <line number="23" hits="1" branch="false" />
+                <line number="24" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="Start_Hour_Bigger_Than_End_Hour_Should_Throw_Exception" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="28" hits="1" branch="false" />
+                <line number="29" hits="1" branch="false" />
+                <line number="30" hits="1" branch="false" />
+                <line number="32" hits="2" branch="false" />
+                <line number="34" hits="1" branch="false" />
+                <line number="35" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="Not_positive_number_in_positive_number_field_should_throw_exception" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="41" hits="2" branch="false" />
+                <line number="42" hits="4" branch="false" />
+                <line number="44" hits="2" branch="false" />
+                <line number="45" hits="2" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="17" hits="1" branch="false" />
+            <line number="18" hits="1" branch="false" />
+            <line number="19" hits="1" branch="false" />
+            <line number="21" hits="2" branch="false" />
+            <line number="23" hits="1" branch="false" />
+            <line number="24" hits="1" branch="false" />
+            <line number="28" hits="1" branch="false" />
+            <line number="29" hits="1" branch="false" />
+            <line number="30" hits="1" branch="false" />
+            <line number="32" hits="2" branch="false" />
+            <line number="34" hits="1" branch="false" />
+            <line number="35" hits="1" branch="false" />
+            <line number="41" hits="2" branch="false" />
+            <line number="42" hits="4" branch="false" />
+            <line number="44" hits="2" branch="false" />
+            <line number="45" hits="2" branch="false" />
+          </lines>
+        </class>
+        <class name="Scheduler.Test.WeekTest" filename="D:\Escritorio\Scheduler\Project\Scheduler\Scheduler.Test\WeekTest.cs" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name="Days_of_week_of_the_day_should_be_correct" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="15" hits="1" branch="false" />
+                <line number="16" hits="1" branch="false" />
+                <line number="17" hits="1" branch="false" />
+                <line number="18" hits="1" branch="false" />
+                <line number="19" hits="1" branch="false" />
+                <line number="20" hits="1" branch="false" />
+                <line number="21" hits="1" branch="false" />
+                <line number="22" hits="1" branch="false" />
+                <line number="23" hits="1" branch="false" />
+                <line number="24" hits="1" branch="false" />
+                <line number="25" hits="1" branch="false" />
+                <line number="26" hits="1" branch="false" />
+                <line number="28" hits="1" branch="false" />
+                <line number="30" hits="1" branch="false" />
+                <line number="32" hits="16" branch="true" condition-coverage="100% (2/2)" />
+                <line number="33" hits="7" branch="false" />
+                <line number="34" hits="7" branch="false" />
+                <line number="35" hits="7" branch="false" />
+                <line number="36" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="Week_should_return_day_of_day_of_week" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="40" hits="1" branch="false" />
+                <line number="41" hits="1" branch="false" />
+                <line number="42" hits="1" branch="false" />
+                <line number="43" hits="1" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="15" hits="1" branch="false" />
+            <line number="16" hits="1" branch="false" />
+            <line number="17" hits="1" branch="false" />
+            <line number="18" hits="1" branch="false" />
+            <line number="19" hits="1" branch="false" />
+            <line number="20" hits="1" branch="false" />
+            <line number="21" hits="1" branch="false" />
+            <line number="22" hits="1" branch="false" />
+            <line number="23" hits="1" branch="false" />
+            <line number="24" hits="1" branch="false" />
+            <line number="25" hits="1" branch="false" />
+            <line number="26" hits="1" branch="false" />
+            <line number="28" hits="1" branch="false" />
+            <line number="30" hits="1" branch="false" />
+            <line number="32" hits="16" branch="true" condition-coverage="100% (2/2)" />
+            <line number="33" hits="7" branch="false" />
+            <line number="34" hits="7" branch="false" />
+            <line number="35" hits="7" branch="false" />
+            <line number="36" hits="1" branch="false" />
+            <line number="40" hits="1" branch="false" />
+            <line number="41" hits="1" branch="false" />
+            <line number="42" hits="1" branch="false" />
+            <line number="43" hits="1" branch="false" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>

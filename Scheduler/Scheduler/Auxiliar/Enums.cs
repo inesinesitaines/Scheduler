@@ -17,4 +17,11 @@ namespace Scheduler.Auxiliar
         Once = 0,
         Recurring = 1
     }
+
+    public enum DailyFrecuency
+    {
+        Hour = 0,
+        Minute = 1,
+        Second = 2
+    }
 }

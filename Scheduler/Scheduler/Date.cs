@@ -20,5 +20,24 @@ namespace Scheduler
 
         public DateTime Day { get; set; }
         public TimeSpan? Hour { get; set; }
+
+        public static bool operator >(Date date1, Date date2)
+        {
+            if(date1.Day == date2.Day)
+            {
+                return date1.Hour > date2.Hour;
+            }
+            return date1.Day > date2.Day;
+
+        }
+
+        public static bool operator <(Date date1, Date date2)
+        {
+            if (date1.Day == date2.Day)
+            {
+                return date1.Hour < date2.Hour;
+            }
+            return date1.Day < date2.Day;
+        }
     }
 }
