@@ -11,15 +11,6 @@ namespace Scheduler.Auxiliar
         public static string InvalidHourInterval
             => "The number of hours in Daily Frecuency configuration should be between 1 and 23 hours.";
 
-        public static string FrecuencyEmpty
-            => "Frecuency can not be empty in recurring schedules.";
-
-        public static string DaysIntervalEmpty
-            => "Number of days of interval can not be empty in daily frecuency schedules.";
-
-        public static string WeekIntervalEmpty
-            => "Number of weeks of interval can not be empty in weekly frecuency schedules.";
-
         public static string TypeOfScheduleEmpty
             => "Type of schedule should not be empty.";
 
@@ -46,6 +37,9 @@ namespace Scheduler.Auxiliar
 
         public static string SecondIntervalOutOfRange
             => "Frecuency in seconds must be between 1 and 86399.";
+
+        public static string DailyIntervalNull
+            => "You must indicate the number of days in daily frecuency configuration.";
 
         public static string WeeklyIntervalNull
             => "You must indicate the number of weeks in weekly configuration.";

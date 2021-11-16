@@ -26,11 +26,21 @@ namespace Scheduler.Auxiliar
             return message.ToString();
         }
 
-        public static string GetOutputMessageEveryXDays(int numberOfDays, Date nextDate, DateTime? startDate, DateTime? endDate)
+        public static string GetOutputMessageEveryXDaysOnceADay(int numberOfDays, Date nextDate, DateTime? startDate, DateTime? endDate)
         {
             string frecuencyExpression = GetExpressionFromEveryXDays(numberOfDays);
             var message = new StringBuilder($"Occurs {frecuencyExpression}. Schedule will be used on {nextDate.Day.ToShortDateString()} at {nextDate.Hour}");
             message.AppendLimitDates(startDate, endDate);
+            message.Append('.');
+            return message.ToString();
+        }
+
+        public static string GetOutputMessageEveryXDaysDailyRecurring(int numberOfDays, Date nextDate, DateTime? startDate, DateTime? endDate, TimeSpan? startHour, TimeSpan? endHour)
+        {
+            string frecuencyExpression = GetExpressionFromEveryXDays(numberOfDays);
+            var message = new StringBuilder($"Occurs {frecuencyExpression}. Schedule will be used on {nextDate.Day.ToShortDateString()} at {nextDate.Hour}");
+            message.AppendLimitDates(startDate, endDate);
+            message.AppendLimitHours(startHour, endHour);
             message.Append('.');
             return message.ToString();
         }

@@ -36,7 +36,7 @@ namespace Scheduler
         {            
             if (configuration.NumberOfDays.HasValue == false)
             {
-                throw new Exception("You must indicate the number of days in daily frecuency configuration.");
+                throw new ArgumentNullException("Number of days", ExceptionMessages.DailyIntervalNull);
             }
             if (configuration.DailyMode == Mode.Once)
             {
@@ -59,7 +59,7 @@ namespace Scheduler
                 NextDay = firstDay.AddDays(configuration.NumberOfDays.Value);
             }
             var NextDate = new Date(NextDay, configuration.HourOnce);
-            return OutputMessages.GetOutputMessageEveryXDays(configuration.NumberOfDays.Value, NextDate, configuration.StartDate, configuration.EndDate);
+            return OutputMessages.GetOutputMessageEveryXDaysOnceADay(configuration.NumberOfDays.Value, NextDate, configuration.StartDate, configuration.EndDate);
         }
 
         private static string GetNextDateDailyWithDailyFrecuencyMessage(Configuration configuration, DateTime firstDay)
@@ -81,7 +81,8 @@ namespace Scheduler
                 NextDate = new Date(NextDay, StartHour);
             }
             
-            string message = OutputMessages.GetOutputMessageEveryXDays(configuration.NumberOfDays.Value, NextDate, configuration.StartDate, configuration.EndDate);
+            string message = OutputMessages.GetOutputMessageEveryXDaysDailyRecurring(configuration.NumberOfDays.Value, NextDate, configuration.StartDate, configuration.EndDate, 
+                configuration.StartHour, configuration.EndHour);
             return ValidateDateLimits(configuration.CurrentDate, NextDate, configuration.StartDate, configuration.EndDate, message);
         }
 
@@ -102,15 +103,16 @@ namespace Scheduler
         {
             TimeSpan? NextDateHourCurrentDate = null;
             TimeSpan Hour = startHour;
-            while (Hour < endHour || NextDateHourCurrentDate.HasValue)
+            while (Hour < endHour)
             {
                 if (Hour < currentDate.Hour)
                 {
-                    Hour.Add(intervalOfTime);
+                    Hour = Hour.Add(intervalOfTime);
                 }
                 else
                 {
                     NextDateHourCurrentDate = Hour;
+                    break;
                 }
             }
             return NextDateHourCurrentDate;
@@ -149,7 +151,7 @@ namespace Scheduler
                     {
                         throw new ArgumentNullException("Second interval", ExceptionMessages.TimeIntervalNull);
                     }
-                    if (configuration.SecondInterval.Value < 1 || configuration.SecondInterval.Value > 86400)
+                    if (configuration.SecondInterval.Value < 1 || configuration.SecondInterval.Value >= 86400)
                     {
                         throw new ArgumentOutOfRangeException("Second interval", ExceptionMessages.SecondIntervalOutOfRange);
                     }
@@ -218,36 +220,28 @@ namespace Scheduler
             TimeSpan EndHour = configuration.EndHour ?? TimeSpan.MaxValue;
 
             TimeSpan IntervalOfTime = ValidateDailyFrecuency(configuration);
-            Date NextDate = null;           
+            Date NextDate;
 
             if (firstDay == configuration.CurrentDate.Day && configuration.DaysOfWeek.Contains(firstDay.DayOfWeek))
             {
                 NextDate = GetNextDateCurrentDay(StartHour, EndHour, configuration.CurrentDate, IntervalOfTime);
-                if(NextDate != null)
+                if (NextDate != null)
                 {
                     return NextDate;
                 }
             }
-            if (NextDate is null)
+            //Comprobamos si dentro de esta semana se encuentra el siguiente día
+            Week Week = configuration.CurrentDate.Day.GetWeek();
+            DateTime? NextDay = GetNextDayInWeek(Week, firstDay, configuration.DaysOfWeek);
+            if (NextDay != null)
             {
-                //Comprobamos si dentro de esta semana se encuentra el siguiente día
-                Week Week = configuration.CurrentDate.Day.GetWeek();
-                DateTime? NextDay = GetNextDayInWeek(Week, configuration.CurrentDate.Day, configuration.DaysOfWeek);
-                if(NextDay != null)
-                {
-                    return new Date(NextDay.Value, StartHour);
-                }              
-
-                //Si en esta semana no coincide ningún día, se busca en la semana siguiente
-                Week FollowingWeek = Week.GetNextWeek(configuration.WeekInterval.Value);
-                NextDay = GetNextDayInWeek(FollowingWeek, FollowingWeek.Sunday, configuration.DaysOfWeek);
-
-                if (NextDay != null)
-                {
-                    return new Date(NextDay.Value, StartHour);
-                }
+                return new Date(NextDay.Value, StartHour);
             }
-            return null;
+
+            //Si en esta semana no coincide ningún día, se busca en la semana siguiente
+            Week FollowingWeek = Week.GetNextWeek(configuration.WeekInterval.Value);
+            NextDay = GetNextDayInWeek(FollowingWeek, FollowingWeek.Sunday, configuration.DaysOfWeek);
+            return new Date(NextDay.Value, StartHour);
         }
 
         private static string GetNextDateWeeklyWithDailyFrecuencyMessage(Configuration configuration, DateTime firstDay)
@@ -263,7 +257,7 @@ namespace Scheduler
         {
             foreach (DateTime eachDay in week.Days)
             {
-                if (eachDay >= date && daysOfWeek.Contains(eachDay.DayOfWeek))
+                if (eachDay > date && daysOfWeek.Contains(eachDay.DayOfWeek))
                 {
                     return eachDay;
                 }
@@ -286,7 +280,7 @@ namespace Scheduler
             {
                 Week Week = firstDate.GetWeek();
                 DateTime? NextDay = GetNextDayInWeek(Week, firstDate, configuration.DaysOfWeek);
-                if (NextDate is null)
+                if (NextDay is null)
                 {
                     Week = Week.GetNextWeek(configuration.WeekInterval.Value);
                     NextDay = GetNextDayInWeek(Week, Week.Sunday, configuration.DaysOfWeek);
