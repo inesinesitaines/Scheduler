@@ -9,7 +9,6 @@ namespace Scheduler
         { }
         public Date CurrentDate { get; set; }
         public Date DateOnce { get; set; }
-        public Mode? TypeOfSchedule { get; set; }
         public Frecuency? Frecuency { get; set; }
         public int? NumberOfDays { get; set; }
         public DateTime? StartDate { get; set; }
@@ -23,6 +22,12 @@ namespace Scheduler
         public int? MinuteInterval { get; set; }
         public int? HourInterval { get; set; } 
         public int? WeekInterval { get; set; }
-        public DayOfWeek[] DaysOfWeek { get; set; }        
+        public DayOfWeek[] DaysOfWeek { get; set; }  
+        public MonthlyFrecuency MonthlyFrecuency { get; set;}
+        public DaysOfWeekMonthly DaysOfWeekMonthly { get; set; }    
+        public int MonthInterval { get; set; }
+        public int DayOfMonth { get; set; }
+        public TypeOfMonthlyFrecuency MonthlyFrecuencyType { get; set; }
+
     }
 }

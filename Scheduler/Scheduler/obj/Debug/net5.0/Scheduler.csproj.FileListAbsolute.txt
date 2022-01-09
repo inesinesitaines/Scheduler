@@ -22,3 +22,15 @@ D:\Escritorio\Scheduler\Project\Scheduler\Scheduler\obj\Debug\net5.0\Scheduler.d
 D:\Escritorio\Scheduler\Project\Scheduler\Scheduler\obj\Debug\net5.0\ref\Scheduler.dll
 D:\Escritorio\Scheduler\Project\Scheduler\Scheduler\obj\Debug\net5.0\Scheduler.pdb
 D:\Escritorio\Scheduler\Project\Scheduler\Scheduler\obj\Debug\net5.0\Scheduler.csproj.AssemblyReference.cache
+C:\Projects\Scheduler\Scheduler\bin\Debug\net5.0\Scheduler.deps.json
+C:\Projects\Scheduler\Scheduler\bin\Debug\net5.0\Scheduler.dll
+C:\Projects\Scheduler\Scheduler\bin\Debug\net5.0\ref\Scheduler.dll
+C:\Projects\Scheduler\Scheduler\bin\Debug\net5.0\Scheduler.pdb
+C:\Projects\Scheduler\Scheduler\obj\Debug\net5.0\Scheduler.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Scheduler\Scheduler\obj\Debug\net5.0\Scheduler.AssemblyInfoInputs.cache
+C:\Projects\Scheduler\Scheduler\obj\Debug\net5.0\Scheduler.AssemblyInfo.cs
+C:\Projects\Scheduler\Scheduler\obj\Debug\net5.0\Scheduler.csproj.CoreCompileInputs.cache
+C:\Projects\Scheduler\Scheduler\obj\Debug\net5.0\Scheduler.dll
+C:\Projects\Scheduler\Scheduler\obj\Debug\net5.0\ref\Scheduler.dll
+C:\Projects\Scheduler\Scheduler\obj\Debug\net5.0\Scheduler.pdb
+C:\Projects\Scheduler\Scheduler\obj\Debug\net5.0\Scheduler.csproj.AssemblyReference.cache

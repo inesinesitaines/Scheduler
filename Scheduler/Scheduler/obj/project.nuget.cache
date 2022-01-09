@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MIXUxrpyUL9oR994uf2oS31S5kh3CfGv1TykVfnDA0D8uZGT74imhOV9zjj3/a5Qk26OFAu3g12l9QBnlDHw/A==",
+  "dgSpecHash": "EtimSqS/kuUQNjmL0FKgjs4v0yIlXorE/nfB91oiKNHrsesvcjkEUcvv2vJ7jM9ZypYmV0MV7Q/4hqmeiSC59w==",
   "success": true,
-  "projectFilePath": "D:\\Escritorio\\Scheduler\\Project\\Scheduler\\Scheduler\\Scheduler.csproj",
+  "projectFilePath": "C:\\Projects\\Scheduler\\Scheduler\\Scheduler.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

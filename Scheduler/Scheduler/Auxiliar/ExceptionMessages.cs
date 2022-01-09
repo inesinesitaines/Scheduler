@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -43,5 +44,17 @@ namespace Scheduler.Auxiliar
 
         public static string WeeklyIntervalNull
             => "You must indicate the number of weeks in weekly configuration.";
+
+        public static string FrecuencyNull
+            => "You must indicate the type frecuency of the schedule: daily, weekly or monthly.";
+
+        public static string MonthlyFrecuencyTypeNull
+            => "You must indicate the type of monthly frecuency of the schedule";
+
+        public static string DaysOfWeekMonthlyNullOfNotRecognized
+            => "You must indicate when the schedule will occur. The options are: monday, tuesday, wednesday, thursday, friday, saturday, sunday, day, weekday or weekend day.";
+
+        public static string MonthlyFrecuencyNullOrNotRecognized
+            => "You must indicate monthly frecuency: first, second, third, forth or last.";
     }
 }
